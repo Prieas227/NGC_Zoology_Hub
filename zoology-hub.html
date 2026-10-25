@@ -1,0 +1,2240 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1B5E20">
+<meta name="description" content="Zoology Hub — National University Honours 4th Year (2025 Exam, 2021-22) প্রাণিবিদ্যা প্রশ্নব্যাংক। ৮টি বিষয়, ক/খ/গ বিভাগ, 🔥 কমন প্রশ্ন চিহ্নিত।">
+<title>Zoology Hub — প্রাণিবিদ্যা প্রশ্নব্যাংক</title>
+<style>
+/* ══════════════════════════════════════════════
+   Zoology Hub — styles (vanilla CSS, no build step)
+   ══════════════════════════════════════════════ */
+:root{
+  --font-bn:'Hind Siliguri','Noto Sans Bengali','Nirmala UI','Shonar Bangla','Kalpurush',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,Menlo,Consolas,'Courier New',monospace;
+  --accent:#1B5E20;
+  --mid:#388E3C;
+  --grad:linear-gradient(135deg,#1B5E20,#2E7D32);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:#e8f5e9;color:#1a1a1a;font-family:var(--font-bn);
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
+}
+button{font-family:inherit;font-size:inherit}
+input,textarea{font-family:inherit}
+.hidden{display:none!important}
+
+.page{min-height:100vh;position:relative;padding-bottom:80px;background:var(--bg,#e8f5e9)}
+.page-home{background:linear-gradient(145deg,#E8F5E9 0%,#E8EAF6 22%,#E1F5FE 45%,#F3E5F5 68%,#FFF8E1 100%)}
+
+/* ───────── floating background icons ───────── */
+.bg-wrap{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.bg-icon{
+  position:absolute;opacity:.048;user-select:none;line-height:1;will-change:transform;
+  animation:bgFloat var(--dur,20s) var(--delay,0s) infinite ease-in-out;
+}
+@keyframes bgFloat{
+  0%,100%{transform:translate(0,0) rotate(0deg)}
+  50%{transform:translate(var(--dx,20px),var(--dy,20px)) rotate(var(--rot,8deg))}
+}
+@media (prefers-reduced-motion:reduce){.bg-icon{animation:none}}
+
+/* ───────── glass base ───────── */
+.glass{
+  background:rgba(255,255,255,var(--go,.8));
+  border:1px solid rgba(255,255,255,var(--bb,.3));
+  backdrop-filter:blur(var(--gb,24px)) saturate(1.8);
+  -webkit-backdrop-filter:blur(var(--gb,24px)) saturate(1.8);
+}
+
+/* ───────── hero / headers ───────── */
+.hero{
+  background:linear-gradient(155deg,rgba(3,3,16,.97) 0%,rgba(8,25,8,.93) 50%,rgba(3,12,30,.97) 100%);
+  padding:34px 20px 28px;text-align:center;border-radius:0 0 42px 42px;
+  box-shadow:0 16px 56px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.07);
+  position:relative;z-index:10;
+}
+.eyebrow{font-size:8px;color:rgba(255,255,255,.45);letter-spacing:4px;font-family:var(--font-mono);margin-bottom:10px;text-transform:uppercase;line-height:1.6}
+.hero-emoji{font-size:36px;margin-bottom:8px;filter:drop-shadow(0 4px 12px rgba(0,0,0,.5))}
+.hero h1{margin:0 0 4px;color:#fff;font-size:clamp(20px,5.5vw,32px);font-weight:900;letter-spacing:-.6px;text-shadow:0 4px 20px rgba(0,0,0,.5)}
+.hero .bn{color:rgba(165,214,167,.9);font-size:14px;font-weight:600}
+.hero .sm{color:rgba(255,255,255,.45);font-size:11px;margin-top:2px}
+.hero-badges{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+
+.badge{--go:.13;--gb:14px;--bb:.22;border-radius:24px;padding:7px 16px;display:inline-flex;align-items:center;gap:7px}
+.badge .t1{color:#fff;font-size:13px;font-weight:700;line-height:1.15}
+.badge .t2{color:rgba(165,214,167,.8);font-size:10px}
+.badge.gold{
+  background:rgba(255,200,0,.13);border:1px solid rgba(255,200,0,.3);border-radius:24px;
+  padding:7px 14px;display:inline-flex;align-items:center;gap:5px;
+  color:#FFD54F;font-size:11px;font-weight:600;backdrop-filter:none;-webkit-backdrop-filter:none;
+}
+
+/* subject header */
+.subhead{
+  padding:22px 16px 18px;text-align:center;position:relative;z-index:10;
+  border-radius:0 0 32px 32px;
+  box-shadow:0 12px 48px rgba(0,0,0,.36),inset 0 1px 0 rgba(255,255,255,.1);
+}
+.subhead .eyebrow{letter-spacing:3.5px;margin-bottom:6px}
+.sub-name{margin:0 0 2px;color:#fff;font-size:clamp(13px,3.5vw,19px);font-weight:900;letter-spacing:-.3px;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.sub-bn{color:rgba(255,255,255,.7);font-size:12px;margin-bottom:8px}
+.pill{--go:.12;--gb:14px;--bb:.22;border-radius:18px;padding:5px 14px;display:inline-flex;align-items:center;gap:6px;color:#fff;font-size:12px;font-weight:600}
+.backbtn{
+  position:absolute;left:14px;top:18px;--go:.14;--gb:12px;--bb:.24;
+  border-radius:14px;padding:6px 13px;cursor:pointer;color:#fff;font-size:13px;font-weight:600;
+  display:inline-flex;align-items:center;gap:4px;
+}
+.backbtn:hover{background:rgba(255,255,255,.24)}
+
+/* ───────── layout ───────── */
+.wrap{max-width:720px;margin:0 auto;padding:0 14px;position:relative;z-index:10}
+.wrap-home{padding-top:16px}
+
+/* ───────── search bar ───────── */
+.searchbar{
+  --go:.88;--gb:24px;--bb:.7;
+  border-radius:22px;padding:12px 18px;display:flex;align-items:center;gap:12px;
+  box-shadow:0 4px 22px rgba(0,0,0,.1);margin-top:16px;transition:box-shadow .22s,border-color .22s;
+}
+.searchbar .ico{font-size:18px;opacity:.4;line-height:1}
+.searchbar input{flex:1;min-width:0;border:none;outline:none;background:transparent;font-size:15px;color:#1a1a1a;padding:2px 0}
+.searchbar input::placeholder{color:#9aa0a6}
+.searchbar:focus-within{box-shadow:0 6px 26px rgba(0,0,0,.16);border-color:rgba(0,0,0,.16)}
+.clearbtn{
+  background:rgba(0,0,0,.07);border:none;border-radius:50%;width:26px;height:26px;cursor:pointer;
+  font-size:13px;display:flex;align-items:center;justify-content:center;color:#333;flex-shrink:0;
+}
+.clearbtn:hover{background:rgba(0,0,0,.12)}
+.searchinfo{text-align:center;font-size:11px;color:#888;margin-top:4px;min-height:0}
+.searchinfo strong{color:var(--accent)}
+
+/* ───────── home stats ───────── */
+.mega-stats{display:flex;gap:10px;justify-content:center;margin-top:12px;flex-wrap:wrap}
+.mega{--go:.82;--gb:18px;--bb:.58;border-radius:14px;padding:8px 16px;text-align:center;min-width:92px}
+.mega .v{font-size:20px;font-weight:900;color:#1B5E20;line-height:1}
+.mega .l{font-size:10px;color:#888;margin-top:1px}
+
+/* ───────── subject grid ───────── */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-top:16px}
+.subj{
+  --go:.82;--gb:22px;--bb:.5;
+  border-radius:22px;padding:16px 18px;border:1px solid rgba(255,255,255,.5);cursor:pointer;text-align:left;
+  box-shadow:0 4px 18px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.82);
+  transition:transform .28s cubic-bezier(.4,0,.2,1),box-shadow .28s;
+  display:block;width:100%;color:inherit;
+}
+.subj:hover,.subj:focus-visible{
+  transform:translateY(-3px) scale(1.015);
+  box-shadow:0 12px 36px rgba(0,0,0,.14),0 0 0 1.5px color-mix(in srgb,var(--accent) 45%,transparent);
+  outline:none;
+}
+.subj-top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.subj-ico{width:46px;height:46px;border-radius:15px;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 12px rgba(0,0,0,.18),inset 0 1px 0 rgba(255,255,255,.2);flex-shrink:0}
+.subj-name{font-size:13px;font-weight:800;color:#1a1a1a;line-height:1.3;letter-spacing:-.2px}
+.subj-bn{font-size:11px;color:#777;margin-top:1px}
+.subj-bot{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.subj-tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag-code{background:rgba(0,0,0,.05);color:var(--accent);border-radius:8px;padding:3px 10px;font-size:11px;font-weight:700;font-family:var(--font-mono)}
+.tag-info{background:rgba(0,0,0,.06);color:#666;border-radius:8px;padding:3px 10px;font-size:10px}
+.subj-arrow{width:28px;height:28px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.empty{text-align:center;padding:48px 16px;color:#bbb;font-size:16px}
+
+/* ───────── tabs ───────── */
+.tabs{
+  --go:.76;--gb:20px;--bb:.52;margin-top:12px;border-radius:20px;padding:4px;display:flex;gap:3px;
+  box-shadow:0 2px 12px rgba(0,0,0,.07),inset 0 1px 0 rgba(255,255,255,.85);
+}
+.tab{
+  flex:1;padding:9px 4px;border-radius:16px;border:none;background:transparent;cursor:pointer;color:#555;
+  font-weight:500;font-size:13px;display:flex;flex-direction:column;align-items:center;gap:1px;
+  transition:all .26s cubic-bezier(.4,0,.2,1);
+}
+.tab .l{font-size:12px;font-weight:700}
+.tab .s{font-size:9px;opacity:.55}
+.tab:hover{background:rgba(0,0,0,.04)}
+.tab.on{background:var(--grad);color:#fff;font-weight:700;box-shadow:0 3px 12px rgba(0,0,0,.2);transform:scale(1.03)}
+.tab.on .s{opacity:.85}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ───────── stats row ───────── */
+.stats{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:10px}
+.stat{--go:.82;--gb:20px;--bb:.6;border-radius:15px;padding:8px 16px;text-align:center;flex:1 0 70px;max-width:120px}
+.stat .v{font-size:22px;font-weight:900;line-height:1;color:var(--accent)}
+.stat .v.red{color:#E53935}
+.stat .l{font-size:10px;color:#999;margin-top:2px}
+.copybtn{
+  background:var(--grad);color:#fff;border:none;border-radius:15px;padding:8px 16px;cursor:pointer;
+  font-weight:700;font-size:11px;box-shadow:0 3px 14px rgba(0,0,0,.16);flex:1 0 70px;max-width:110px;
+}
+.copybtn:hover{filter:brightness(1.08)}
+.copybtn:active{transform:scale(.97)}
+
+/* ───────── chapter cards ───────── */
+.card{
+  --go:.78;--gb:22px;--bb:.42;
+  border-radius:20px;overflow:hidden;margin-bottom:10px;margin-top:10px;
+  box-shadow:0 2px 14px rgba(0,0,0,.07);
+  transition:box-shadow .3s,background .3s;
+}
+.card.open{--go:.92;--gb:32px;--bb:.7;box-shadow:0 10px 36px rgba(0,0,0,.13)}
+.card-head{
+  width:100%;border:none;background:transparent;cursor:pointer;text-align:left;padding:13px 16px;
+  display:flex;align-items:center;gap:10px;transition:background .28s;
+}
+.card-head:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.card-emoji{font-size:18px;flex-shrink:0;line-height:1}
+.card-mid{flex:1;min-width:0}
+.card-id{font-size:10px;font-weight:700;letter-spacing:2px;color:var(--accent);opacity:.65;text-transform:uppercase;font-family:var(--font-mono);margin-bottom:2px}
+.card.open .card-id{opacity:1}
+.card-title{font-weight:700;font-size:13px;color:#1a1a1a;line-height:1.35;letter-spacing:-.2px}
+.card-badges{display:flex;align-items:center;gap:5px;flex-shrink:0}
+.badge-hot{background:rgba(229,57,53,.12);color:#C62828;border-radius:9px;padding:2px 8px;font-size:10px;font-weight:700}
+.badge-count{background:rgba(0,0,0,.06);color:var(--accent);border-radius:9px;padding:2px 8px;font-size:10px;font-weight:700;transition:all .25s}
+.card.open .badge-count{background:var(--grad);color:#fff}
+.chev{color:var(--accent);font-size:16px;display:inline-block;transition:transform .28s;line-height:1}
+.card.open .chev{transform:rotate(180deg);color:#555}
+.card-body{border-top:1px solid rgba(0,0,0,.05)}
+.qrow{display:flex;align-items:flex-start;gap:10px;padding:10px 16px;border-bottom:1px solid rgba(0,0,0,.045);transition:background .15s}
+.qrow:last-child{border-bottom:none}
+.qrow.hot{background:rgba(255,253,231,.65)}
+.qrow:not(.hot):hover{background:rgba(0,0,0,.025)}
+.qnum{
+  min-width:28px;height:28px;border-radius:9px;background:var(--grad);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;
+  font-family:var(--font-mono);flex-shrink:0;margin-top:1px;box-shadow:0 2px 5px rgba(0,0,0,.14);
+}
+.qrow.hot .qnum{background:linear-gradient(135deg,#E53935,#EF5350);box-shadow:0 2px 7px rgba(229,57,53,.36)}
+.qtext{font-size:14px;color:#1a1a1a;line-height:1.7;letter-spacing:-.1px}
+.qrow.hot .qtext{font-weight:500}
+.hotpill{
+  display:inline-flex;align-items:center;gap:2px;margin-left:7px;
+  background:linear-gradient(135deg,#E53935,#EF5350);color:#fff;font-size:9px;
+  border-radius:7px;padding:1px 6px;font-weight:700;vertical-align:middle;letter-spacing:.3px;
+}
+mark{background:#FFF176;border-radius:3px;padding:0 2px;color:inherit}
+
+/* ───────── footer ───────── */
+.foot{text-align:center;margin-top:44px;padding:0 16px;position:relative;z-index:10}
+.foot-inner{--go:.87;--gb:28px;--bb:.68;border-radius:26px;padding:20px 26px;display:inline-block;max-width:460px;width:100%;box-shadow:0 6px 28px rgba(0,0,0,.08)}
+.foot-icons{display:flex;justify-content:center;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.foot-icons span{font-size:19px;opacity:.7}
+.foot-line{height:1px;background:linear-gradient(90deg,transparent,rgba(0,0,0,.08),transparent);margin:10px 0}
+.foot-name{font-size:14px;color:var(--accent);font-weight:700;letter-spacing:-.2px;margin-bottom:2px}
+.foot-sub{font-size:12px;color:#444;font-weight:600}
+.foot-cc{font-size:10px;color:#bbb;font-family:var(--font-mono)}
+
+/* ───────── toast + modal ───────── */
+.toast{
+  position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(18px);
+  background:rgba(20,20,30,.93);color:#fff;padding:11px 20px;border-radius:14px;font-size:13px;font-weight:600;
+  z-index:9999;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;
+  box-shadow:0 10px 30px rgba(0,0,0,.3);max-width:90vw;text-align:center;
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;padding:16px;z-index:9998}
+.modal[hidden]{display:none}
+.modal-box{background:#fff;border-radius:20px;padding:18px;width:100%;max-width:560px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.modal-box h3{margin:0 0 4px;font-size:15px}
+.modal-box p{margin:0 0 10px;font-size:11px;color:#888}
+.modal-box textarea{width:100%;height:46vh;border-radius:12px;border:1px solid #ddd;padding:10px;font-size:12px;line-height:1.6;resize:vertical;font-family:var(--font-mono)}
+.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:10px}
+.btn{border:none;border-radius:12px;padding:9px 16px;font-size:13px;font-weight:700;cursor:pointer;background:#eee;color:#333}
+.btn.primary{background:#1B5E20;color:#fff}
+
+/* ───────── small screens ───────── */
+@media (max-width:420px){
+  .hero{padding:26px 16px 22px;border-radius:0 0 32px 32px}
+  .grid{grid-template-columns:1fr}
+  .backbtn{top:14px;left:10px;padding:5px 10px;font-size:12px}
+  .qtext{font-size:13.5px}
+  .stat{max-width:none}
+  .copybtn{max-width:none}
+}
+@media print{
+  .bg-wrap,.searchbar,.tabs,.copybtn,.backbtn,.foot{display:none!important}
+  .card,.card-body{display:block!important}
+  .page{background:#fff}
+}
+
+/* ───────── v2 additions ───────── */
+[hidden]{display:none!important}
+.subj-name,.subj-bn,.card-id,.card-title{display:block}
+.card-mid{display:block}
+.list-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:18px 4px 2px}
+.list-title{font-size:12px;font-weight:800;color:#555;letter-spacing:.3px}
+.linkbtn{
+  background:rgba(255,255,255,.75);border:1px solid rgba(0,0,0,.07);border-radius:10px;
+  padding:4px 12px;font-size:11px;font-weight:700;color:var(--accent);cursor:pointer;transition:all .18s;
+}
+.linkbtn:hover{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.linkbtn:disabled{opacity:.45;cursor:default;box-shadow:none}
+.subj{cursor:pointer}
+.subj:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.qtext mark{background:#FFF176;border-radius:3px;padding:0 2px}
+
+/* ───────── mobile header fixes (v3) ───────── */
+@media (max-width:600px){
+  .subhead{padding-top:58px}
+  .backbtn{top:12px;left:12px}
+  .subhead .eyebrow{font-size:7px;letter-spacing:2px;padding:0 10px}
+  .hero .eyebrow{font-size:7px;letter-spacing:2.5px;padding:0 6px}
+  .hero-badges{gap:8px}
+  .badge .t1{font-size:12px}
+}
+@media (max-width:380px){
+  .sub-name{font-size:14px}
+  .foot-inner{padding:16px 16px}
+}
+
+</style>
+</head>
+<body>
+<div id="app"></div>
+<noscript>
+  <div style="padding:24px;font-family:system-ui,sans-serif;text-align:center">
+    এই অ্যাপটি চালাতে জাভাস্ক্রিপ্ট চালু করুন।
+  </div>
+</noscript>
+<script>
+/* ══════════════════════════════════════════════
+   Zoology Hub — ডেটা (প্রশ্নব্যাংক)
+   National University · Honours 4th Year · 2025 Exam · 2021-22
+   সম্পূর্ণ প্লেইন JavaScript — কোনো ফ্রেমওয়ার্ক নেই।
+   hot: true মানে 🔥 ১০০% কমন (গুরুত্বপূর্ণ) প্রশ্ন
+══════════════════════════════════════════════ */
+
+const SUBJECTS = [
+  { id:"AEZ", code:"243101", name:"Applied & Economic Zoology", bn:"এপ্লাইড ও ইকোনমিক জুওলজি", emoji:"🐝", grad:"linear-gradient(135deg,#1B5E20,#2E7D32)", accent:"#1B5E20", mid:"#388E3C", bg:"linear-gradient(145deg,#E8F5E9 0%,#F1F8E9 100%)" },
+  { id:"GEB", code:"243103", name:"Genetic Engineering & Biotechnology", bn:"জেনেটিক ইঞ্জিনিয়ারিং ও বায়োটেকনোলজি", emoji:"🧬", grad:"linear-gradient(135deg,#1A237E,#283593)", accent:"#1A237E", mid:"#303F9F", bg:"linear-gradient(145deg,#E8EAF6 0%,#EDE7F6 100%)" },
+  { id:"BSR", code:"243105", name:"Biostatistics & Research Methodology", bn:"বায়োস্ট্যাটিস্টিক্স ও রিসার্চ মেথডলজি", emoji:"📊", grad:"linear-gradient(135deg,#004D40,#00695C)", accent:"#004D40", mid:"#00796B", bg:"linear-gradient(145deg,#E0F2F1 0%,#E8F5E9 100%)" },
+  { id:"MRB", code:"243107", name:"Microbiology & Radiation Biology", bn:"মাইক্রোবায়োলজি ও রেডিয়েশন বায়োলজি", emoji:"🦠", grad:"linear-gradient(135deg,#4A148C,#6A1B9A)", accent:"#4A148C", mid:"#7B1FA2", bg:"linear-gradient(145deg,#F3E5F5 0%,#EDE7F6 100%)" },
+  { id:"PAR", code:"243109", name:"Parasitology", bn:"প্যারাসাইটোলজি", emoji:"🔬", grad:"linear-gradient(135deg,#880E4F,#AD1457)", accent:"#880E4F", mid:"#C2185B", bg:"linear-gradient(145deg,#FCE4EC 0%,#F8BBD9 100%)" },
+  { id:"ENT", code:"243111", name:"Entomology", bn:"এন্টোমোলজি", emoji:"🦋", grad:"linear-gradient(135deg,#BF360C,#D84315)", accent:"#BF360C", mid:"#E64A19", bg:"linear-gradient(145deg,#FBE9E7 0%,#FFF3E0 100%)" },
+  { id:"FSB", code:"243113", name:"Fisheries Biology", bn:"ফিশারিজ বায়োলজি", emoji:"🐟", grad:"linear-gradient(135deg,#01579B,#0277BD)", accent:"#01579B", mid:"#0288D1", bg:"linear-gradient(145deg,#E1F5FE 0%,#E0F7FA 100%)" },
+  { id:"WLB", code:"243115", name:"Wildlife Biology", bn:"ওয়াইল্ডলাইফ বায়োলজি", emoji:"🦁", grad:"linear-gradient(135deg,#33691E,#558B2F)", accent:"#33691E", mid:"#689F38", bg:"linear-gradient(145deg,#F1F8E9 0%,#E8F5E9 100%)" }
+];
+
+const DIVS = [
+  { key:"ka",  label:"ক বিভাগ",  sub:"অতিসংক্ষিপ্ত · ১ নম্বর" },
+  { key:"kha", label:"খ বিভাগ",  sub:"সংক্ষিপ্ত · ৪ নম্বর" },
+  { key:"ga",  label:"গ বিভাগ",  sub:"রচনামূলক · ১০ নম্বর" }
+];
+
+const DATA = {
+
+/* ── AEZ ── */
+AEZ:[
+  {id:"A1",emoji:"🐝",title:"অধ্যায় ১: মৌমাছি পালন (Apiculture)",
+    ka:[
+      {q:"Apiculture কী?",hot:true},
+      {q:"মধু উৎপাদনকারী চারটি মৌমাছির বৈজ্ঞানিক নাম লেখো।",hot:true},
+      {q:"রানি ও শ্রমিক মৌমাছির একটি পার্থক্য লেখো।",hot:true},
+      {q:"মৌমাছির Waggle dance কী বোঝায়?",hot:true},
+      {q:"মৌমাছির সামাজিক আচরণ বলতে কী বোঝো?",hot:true},
+      {q:"মধুর দুটি ঔষধি গুণ লেখো।",hot:true},
+      {q:"Royal jelly কে তৈরি করে?",hot:false},
+      {q:"Drone মৌমাছির কাজ কী?",hot:false}
+    ],
+    kha:[
+      {q:"মধু উৎপাদনকারী চারটি মৌমাছির বৈজ্ঞানিক নাম লিখ।",hot:true},
+      {q:"মৌমাছির বিভিন্ন প্রকার নাচের নাম ও এর কারণ বর্ণনা কর।",hot:false},
+      {q:"মধু কী? মধুর ব্যবহার ও গুরুত্ব লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"সামাজিক আচরণ বলতে কী বুঝ? মৌমাছির সামাজিক আচরণ বর্ণনা কর।",hot:true},
+      {q:"Apiculture কী? মৌমাছির জীবনচক্র আলোচনা কর।",hot:false},
+      {q:"মধু কী? বাংলাদেশে মৌচাক হতে কীভাবে মধু আহরণ, প্রক্রিয়াজাতকরণ ও বাজারজাতকরণ করা হয়? বর্ণনা কর।",hot:true}
+    ]},
+  {id:"A2",emoji:"🦋",title:"অধ্যায় ২: রেশম চাষ (Sericulture)",
+    ka:[
+      {q:"রেশম পোকার বৈজ্ঞানিক নাম কী?",hot:true},
+      {q:"কোকুন কাকে বলে?",hot:true},
+      {q:"রেশম রিলিং ও স্পিনিং-এর পার্থক্য কী?",hot:true},
+      {q:"পুরুষ ও স্ত্রী রেশম মথের একটি বাহ্যিক পার্থক্য লেখো।",hot:true},
+      {q:"রেশম পোকার পেব্রিন রোগের কারক কী?",hot:true},
+      {q:"Sericin ও Fibroin কী?",hot:false},
+      {q:"তুঁত পাতা রেশম পোকার খাদ্য কেন?",hot:false},
+      {q:"বাংলাদেশে রেশম চাষের একটি অর্থনৈতিক গুরুত্ব লেখো।",hot:true}
+    ],
+    kha:[
+      {q:"বাংলাদেশের প্রেক্ষাপটে রেশম চাষের আর্থ-সামাজিক গুরুত্ব লিখ।",hot:true},
+      {q:"পরজীবীর আক্রমণ হতে রেশম পোকাকে রক্ষার জন্য কী কী পদক্ষেপ গ্রহণ করা উচিত?",hot:false},
+      {q:"পুরুষ ও স্ত্রী রেশম মথের মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"রেশম রিলিং ও স্পিনিং বলতে কী বুঝ?",hot:false}
+    ],
+    ga:[
+      {q:"তুঁতজাত রেশম পোকার প্রতিপালন পদ্ধতি বর্ণনা কর।",hot:true},
+      {q:"রেশম পোকার বিভিন্ন রোগের নাম, লক্ষণ ও প্রতিকার বর্ণনা কর।",hot:false}
+    ]},
+  {id:"A3",emoji:"🐚",title:"অধ্যায় ৩: লাক্ষা উৎপাদন (Lac Culture)",
+    ka:[
+      {q:"লাক্ষা পতঙ্গের বৈজ্ঞানিক নাম লেখো।",hot:true},
+      {q:"শেলাক কী?",hot:true},
+      {q:"স্টিক লাক্ষা ও সিড লাক্ষার পার্থক্য কী?",hot:true},
+      {q:"লাক্ষার দুটি শিল্পগত ব্যবহার লেখো।",hot:true},
+      {q:"লাক্ষা পতঙ্গের জীবনচক্রে কয়টি দশা আছে?",hot:false},
+      {q:"লাক্ষার একটি হোস্ট উদ্ভিদের নাম লেখো।",hot:false}
+    ],
+    kha:[
+      {q:"লাক্ষা কী? বিভিন্ন প্রকার লাক্ষার নাম, উপাদান ও কাজ লিখ।",hot:false},
+      {q:"বাংলাদেশে লাক্ষা চাষের আর্থ-সামাজিক গুরুত্ব লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"লাক্ষা পতঙ্গের জীবনচক্র আলোচনা কর।",hot:true},
+      {q:"লাক্ষা সংগ্রহ পদ্ধতি বর্ণনা কর।",hot:false}
+    ]},
+  {id:"A4",emoji:"🐟",title:"অধ্যায় ৪: কার্প মাছ চাষ",
+    ka:[
+      {q:"মেজর কার্প ও মাইনর কার্পের একটি পার্থক্য লেখো।",hot:true},
+      {q:"রুই মাছের বৈজ্ঞানিক নাম কী?",hot:true},
+      {q:"প্রণোদিত প্রজনন কী?",hot:true},
+      {q:"কার্প চাষে পলিকালচার কেন গুরুত্বপূর্ণ?",hot:true},
+      {q:"পুকুরে কার্প চাষের একটি পূর্বশর্ত লেখো।",hot:false},
+      {q:"FCR কী?",hot:false}
+    ],
+    kha:[
+      {q:"মাছ চাষে প্রণোদিত প্রজননের গুরুত্ব লিখ।",hot:false},
+      {q:"মেজর ও মাইনর কার্পের মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"কার্প কী? কার্প চাষের জন্য পুকুরের বৈশিষ্ট্য লিখ।",hot:false},
+      {q:"কার্প কী? কার্পের বৈশিষ্ট্য উল্লেখ কর।",hot:false}
+    ],
+    ga:[
+      {q:"পুকুরে কার্প জাতীয় মাছের চাষ পদ্ধতি বা ব্যবস্থাপনা আলোচনা কর।",hot:true}
+    ]},
+  {id:"A5",emoji:"🦐",title:"অধ্যায় ৫: চিংড়ি চাষ",
+    ka:[
+      {q:"বাগদা চিংড়ির বৈজ্ঞানিক নাম লেখো।",hot:true},
+      {q:"গলদা ও বাগদা চিংড়ির একটি পার্থক্য লেখো।",hot:true},
+      {q:"পুরুষ ও স্ত্রী চিংড়ির একটি বাহ্যিক পার্থক্য লেখো।",hot:true},
+      {q:"চিংড়ির মোল্টিং কী?",hot:false},
+      {q:"ঘেরে চিংড়ি চাষ কী?",hot:true}
+    ],
+    kha:[
+      {q:"বাংলাদেশে চিংড়ি চাষের আর্থ-সামাজিক গুরুত্ব লিখ।",hot:true},
+      {q:"পুরুষ ও স্ত্রী চিংড়ির মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"বাংলাদেশে চিংড়ি চাষের উন্নয়নে কী ধরনের পদক্ষেপ গ্রহণ করা উচিত?",hot:false}
+    ],
+    ga:[
+      {q:"স্বাদুপানিতে চিংড়ি চাষ পদ্ধতি বর্ণনা কর।",hot:false},
+      {q:"ঘেরে বা উপকূলীয় অঞ্চলে চিংড়ি চাষ পদ্ধতি আলোচনা কর।",hot:true}
+    ]},
+  {id:"A6",emoji:"🐚",title:"অধ্যায় ৬: মুক্তা চাষ (Pearl Culture)",
+    ka:[
+      {q:"মুক্তা কীভাবে তৈরি হয়?",hot:true},
+      {q:"মুক্তা উৎপাদনকারী চারটি ঝিনুকের বৈজ্ঞানিক নাম লেখো।",hot:true},
+      {q:"Nacre বা Mother of Pearl কী?",hot:true},
+      {q:"প্রাকৃতিক ও কৃত্রিম মুক্তার একটি পার্থক্য লেখো।",hot:true},
+      {q:"মুক্তা চাষের একটি প্রধান সমস্যা লেখো।",hot:true}
+    ],
+    kha:[
+      {q:"মুক্তা উৎপাদনকারী চারটি ঝিনুক প্রজাতির বৈজ্ঞানিক নাম লিখ।",hot:true},
+      {q:"মুক্তার গঠন প্রক্রিয়া সংক্ষেপে বর্ণনা কর।",hot:false},
+      {q:"মুক্তা চাষের সমস্যাবলি উল্লেখ কর।",hot:true}
+    ],
+    ga:[
+      {q:"প্রণোদিত উপায়ে মুক্তা চাষ পদ্ধতি বর্ণনা কর।",hot:true},
+      {q:"অর্থনৈতিক গুরুত্বসহ Oyster এর বাণিজ্যিক চাষ পদ্ধতি বর্ণনা কর।",hot:false}
+    ]},
+  {id:"A7",emoji:"🌊",title:"অধ্যায় ৭: Mariculture",
+    ka:[
+      {q:"Mariculture কী?",hot:true},
+      {q:"Mariculture ও Aquaculture-এর একটি পার্থক্য লেখো।",hot:true},
+      {q:"EEZ-এর পূর্ণরূপ কী?",hot:true},
+      {q:"সমুদ্রের Photic zone কী?",hot:false},
+      {q:"বাংলাদেশে মেরিকালচারের একটি ভবিষ্যৎ সম্ভাবনা লেখো।",hot:true}
+    ],
+    kha:[
+      {q:"Mariculture ও Aquaculture এর মধ্যে পার্থক্য লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"Mericulture কী? বাংলাদেশে মেরিকালচারের ভবিষ্যৎ সম্ভাবনা উল্লেখ কর।",hot:true},
+      {q:"অর্থনৈতিক গুরুত্বসহ কাঁকড়া চাষ পদ্ধতি বর্ণনা কর।",hot:false},
+      {q:"চিত্রসহ সমুদ্রের অঞ্চল বিভাজন বর্ণনা কর।",hot:true}
+    ]},
+  {id:"A8",emoji:"🎣",title:"অধ্যায় ৮: হ্যাচারি ও পুকুর ব্যবস্থাপনা",
+    ka:[
+      {q:"হ্যাচারি কী?",hot:true},
+      {q:"আঁতুড় পুকুর ও মজুত পুকুরের একটি পার্থক্য লেখো।",hot:true},
+      {q:"হাওড় ও বাওড়ের একটি পার্থক্য লেখো।",hot:true},
+      {q:"Aquaculture-এর একটি মূল উদ্দেশ্য লেখো।",hot:true},
+      {q:"মাছের একটি ছত্রাকঘটিত রোগের নাম লেখো।",hot:true}
+    ],
+    kha:[
+      {q:"আঁতুড় পুকুর ও মজুত পুকুরের মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"হাওড় ও বাওড়ের মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"Aquaculture কী? Aquaculture এর উদ্দেশ্যসমূহ লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"হ্যাচারি কী? হ্যাচারির জন্য স্থান নির্বাচন, পরিকল্পনা ও নির্মাণ কৌশল বর্ণনা কর।",hot:true},
+      {q:"পুকুর কী? চিত্রসহ একটি পুকুরের জৈব উপাদানগুলো বর্ণনা কর।",hot:false},
+      {q:"স্বাদুপানির মাছের বিভিন্ন রোগ ও এদের দমন পদ্ধতি আলোচনা কর।",hot:false}
+    ]},
+  {id:"A9",emoji:"🌾",title:"অধ্যায় ৯: সমন্বিত মৎস্য চাষ ও IPM",
+    ka:[
+      {q:"সমন্বিত মৎস্য চাষ কী?",hot:true},
+      {q:"IPM-এর পূর্ণরূপ কী?",hot:true},
+      {q:"মাছ ও হাঁস-মুরগির সমন্বিত চাষের একটি সুবিধা লেখো।",hot:true},
+      {q:"IPM-এর দুটি উপাদান লেখো।",hot:true},
+      {q:"Rice-Fish culture কী?",hot:false}
+    ],
+    kha:[
+      {q:"IPM এর উপাদানগুলো কী কী?",hot:false},
+      {q:"সমন্বিত মৎস্য চাষের সুবিধাগুলো উল্লেখ কর।",hot:true}
+    ],
+    ga:[
+      {q:"সমন্বিত মৎস্য চাষ বলতে কী বুঝ? মাছ ও হাঁস-মুরগির সমন্বিত চাষ পদ্ধতি বর্ণনা কর এবং এর সুবিধাসমূহ উল্লেখ কর।",hot:true},
+      {q:"ধানক্ষেতে মাছ চাষের পদ্ধতিসমূহ বর্ণনা কর।",hot:false},
+      {q:"IPM কী? IPM এর মূলনীতি ও সুবিধাগুলো লিখ।",hot:true}
+    ]},
+  {id:"A10",emoji:"🐄",title:"অধ্যায় ১০: ডেইরি ফার্মিং ও গবাদিপশু",
+    ka:[
+      {q:"ডেইরি ফার্মিং কী?",hot:true},
+      {q:"গরুর তড়কা রোগের কারক অণুজীবের নাম কী?",hot:true},
+      {q:"তড়কা রোগের দুটি লক্ষণ লেখো।",hot:true},
+      {q:"ইনব্রিডিং ও আউটব্রিডিং-এর একটি পার্থক্য লেখো।",hot:true},
+      {q:"দুগ্ধ উৎপাদনকারী একটি সংকর গাভীর নাম লেখো।",hot:true}
+    ],
+    kha:[
+      {q:"দুগ্ধ খামার ব্যবস্থাপনা বলতে কী বুঝ? দুগ্ধ খামার স্থাপনের জন্য বিবেচ্য বিষয়গুলো কী কী?",hot:true},
+      {q:"ইনব্রিডিং ও আউটব্রিডিং এর মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"গরুর তড়কা রোগের কারণ, লক্ষণ ও প্রতিকার বর্ণনা কর।",hot:true}
+    ],
+    ga:[
+      {q:"ডেইরি ফার্ম কী? বাংলাদেশের আর্থ-সামাজিক উন্নয়নে ডেইরি ফার্মিং এর গুরুত্ব আলোচনা কর।",hot:true},
+      {q:"ডেইরি ফার্মিং কী? বাংলাদেশে দুগ্ধ উৎপাদনকারী গাভীর সংকরজাত উদ্ভাবন কৌশল বর্ণনা কর।",hot:true}
+    ]},
+  {id:"A11",emoji:"🐓",title:"অধ্যায় ১১: হাঁস-মুরগি পালন (Poultry)",
+    ka:[
+      {q:"বার্ড ফ্লু কোন ভাইরাস ঘটায়?",hot:true},
+      {q:"হাঁসের প্লেগ রোগের কারক কী?",hot:true},
+      {q:"ব্রয়লার ও লেয়ার মুরগির একটি পার্থক্য লেখো।",hot:true},
+      {q:"কেজ সিস্টেম ও লিটার সিস্টেমের পার্থক্য কী?",hot:true},
+      {q:"রানীক্ষেত রোগ কোন ভাইরাস ঘটায়?",hot:true},
+      {q:"আসিল জাতের মুরগির একটি বৈশিষ্ট্য লেখো।",hot:false}
+    ],
+    kha:[
+      {q:"আসিল জাতের মুরগির বৈশিষ্ট্য লিখ।",hot:false},
+      {q:"কেজ সিস্টেম ও লিটার সিস্টেম মুরগি পালন পদ্ধতির মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"বার্ড ফ্লু কী? সংক্ষেপে আলোচনা কর।",hot:false},
+      {q:"বাংলাদেশে হাঁস-মুরগির খামারের আর্থ-সামাজিক গুরুত্ব আলোচনা কর।",hot:false},
+      {q:"হাঁসের প্লেগ রোগের কারণ, লক্ষণ ও প্রতিকার বর্ণনা কর।",hot:true}
+    ],
+    ga:[
+      {q:"হাঁস-মুরগি পালনের বিভিন্ন পদ্ধতি আলোচনা কর।",hot:true},
+      {q:"পোল্ট্রি কী? হাঁস-মুরগির বিভিন্ন প্রকার ভাইরাসজনিত রোগবালাই ও তাদের দমন পদ্ধতি বর্ণনা কর।",hot:false},
+      {q:"মুরগির বিভিন্ন ধরনের রোগবালাই এবং এদের প্রতিকার আলোচনা কর।",hot:true}
+    ]}
+],
+
+/* ── GEB ── Genetic Engineering Part + Biotechnology Part */
+GEB:[
+  {id:"G1",emoji:"🧬",title:"GE অধ্যায় ১: জিন প্রকৌশলের প্রয়োগ",
+    ka:[
+      {q:"জিন প্রকৌশল কী?",hot:true},
+      {q:"চিকিৎসাক্ষেত্রে জিন প্রকৌশলের একটি ব্যবহার লেখো।",hot:true},
+      {q:"কৃষিক্ষেত্রে জিন প্রকৌশলের একটি ভূমিকা লেখো।",hot:true},
+      {q:"rDNA প্রযুক্তির সংজ্ঞা দাও।",hot:true}
+    ],
+    kha:[
+      {q:"চিকিৎসাক্ষেত্রে জেনেটিক ইঞ্জিনিয়ারিং এর প্রয়োগ লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"বাংলাদেশের আর্থ-সামাজিক উন্নয়নে জিন প্রকৌশলের ভূমিকা উল্লেখ কর।",hot:false},
+      {q:"খাদ্য উৎপাদন ও কৃষিক্ষেত্রে জিন প্রকৌশলের ভূমিকা আলোচনা কর।",hot:false}
+    ]},
+  {id:"G2",emoji:"✂️",title:"GE অধ্যায় ২: এনজাইম ও DNA",
+    ka:[
+      {q:"রেস্ট্রিকশন এনজাইম কী?",hot:true},
+      {q:"এক্সোনিউক্লিয়েজ কী?",hot:true},
+      {q:"এন্ডোনিউক্লিয়েজ কী?",hot:true},
+      {q:"Palindrome sequence কী?",hot:true},
+      {q:"Sticky end ও Blunt end-এর পার্থক্য কী?",hot:true},
+      {q:"EcoRI-এর কর্তন সাইট কোথায়?",hot:true},
+      {q:"DNA ও RNA-র একটি পার্থক্য লেখো।",hot:false}
+    ],
+    kha:[
+      {q:"এক্সোনিউক্লিয়েজ ও এন্ডোনিউক্লিয়েজ এর মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"DNA ও RNA এর মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"চারটি রেস্ট্রিকশন এনজাইমের নাম, উৎস, কাজ ও কর্তন সাইট উল্লেখ কর।",hot:true}
+    ],
+    ga:[
+      {q:"চিত্রসহ rDNA প্রযুক্তির ধাপসমূহ বর্ণনা কর।",hot:true}
+    ]},
+  {id:"G3",emoji:"🔗",title:"GE অধ্যায় ৩: cDNA সংশ্লেষণ",
+    ka:[
+      {q:"cDNA কী?",hot:true},
+      {q:"Reverse transcriptase কী?",hot:true},
+      {q:"mRNA থেকে cDNA তৈরির প্রথম ধাপ কী?",hot:true},
+      {q:"cDNA লাইব্রেরি কী?",hot:false}
+    ],
+    kha:[],
+    ga:[
+      {q:"cDNA কী? cDNA সংশ্লেষ কৌশল বর্ণনা কর।",hot:true}
+    ]},
+  {id:"G4",emoji:"🧫",title:"GE অধ্যায় ৪: ভেক্টর ও প্লাজমিড",
+    ka:[
+      {q:"প্লাজমিড কী?",hot:true},
+      {q:"কসমিড কী?",hot:true},
+      {q:"pBR322-এর দুটি বৈশিষ্ট্য লেখো।",hot:true},
+      {q:"একটি আদর্শ ভেক্টরের দুটি বৈশিষ্ট্য লেখো।",hot:true},
+      {q:"ভেক্টর হিসেবে প্লাজমিড উপযোগী কেন?",hot:true},
+      {q:"Antibiotic resistance gene ভেক্টরে থাকে কেন?",hot:false}
+    ],
+    kha:[
+      {q:"প্লাজমিড ও কসমিডের মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"ভেক্টর হিসেবে প্লাজমিড উপযোগী কেন?",hot:false},
+      {q:"একটি আদর্শ বা উত্তম ভেক্টরের বৈশিষ্ট্য লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"ক্লোনিং ভেক্টর হিসেবে ব্যবহৃত pBR322 এর গঠন ও ব্যবহার লিখ।",hot:true}
+    ]},
+  {id:"G5",emoji:"🚧",title:"GE অধ্যায় ৫: Foreign জিন প্রকাশ",
+    ka:[
+      {q:"Foreign gene expression কী?",hot:false},
+      {q:"Foreign জিন প্রকাশে একটি প্রতিবন্ধকতা লেখো।",hot:true},
+      {q:"Promoter কী?",hot:false}
+    ],
+    kha:[
+      {q:"Foreign জিন প্রকাশে প্রতিবন্ধকতাসমূহ উল্লেখ কর।",hot:false}
+    ],
+    ga:[]},
+  {id:"G6",emoji:"💉",title:"GE অধ্যায় ৬: ট্রান্সফরমেশন ও ইনসুলিন",
+    ka:[
+      {q:"ট্রান্সফরমেশন কী?",hot:true},
+      {q:"Competent cell কী?",hot:false},
+      {q:"Electroporation কী?",hot:false},
+      {q:"rDNA প্রযুক্তিতে ইনসুলিন উৎপাদনের প্রথম ধাপ কী?",hot:true}
+    ],
+    kha:[],
+    ga:[
+      {q:"ট্রান্সফরমেশন বলতে কী বুঝ? E. coli কোষের ট্রান্সফরমেশন পদ্ধতি আলোচনা কর।",hot:false},
+      {q:"rDNA প্রযুক্তিতে ইনসুলিন উৎপাদন কৌশল বর্ণনা কর।",hot:true}
+    ]},
+  {id:"G7",emoji:"🛡️",title:"GE অধ্যায় ৭: ইন্টারফেরন ও ভ্যাকসিন",
+    ka:[
+      {q:"ইন্টারফেরন কী?",hot:true},
+      {q:"ইন্টারফেরন কীভাবে ভাইরাস প্রতিরোধ করে?",hot:true},
+      {q:"শিল্পক্ষেত্রে জেনেটিক ইঞ্জিনিয়ারিংয়ের একটি ব্যবহার লেখো।",hot:false}
+    ],
+    kha:[
+      {q:"শিল্পক্ষেত্রে জেনেটিক ইঞ্জিনিয়ারিং এর প্রয়োগ উল্লেখ কর।",hot:false},
+      {q:"ইন্টারফেরন কীভাবে কাজ করে? / ইন্টারফেরনের কাজ উল্লেখ কর।",hot:false}
+    ],
+    ga:[
+      {q:"ইন্টারফেরন কী? ইন্টারফেরন উৎপাদন পদ্ধতি ও এর গুরুত্ব আলোচনা কর।",hot:false},
+      {q:"প্রায়োগিক দিক উল্লেখসহ জিন প্রকৌশলের মাধ্যমে ভ্যাকসিন উৎপাদন কৌশল বর্ণনা কর।",hot:true}
+    ]},
+  {id:"G8",emoji:"🐑",title:"GE অধ্যায় ৮: ট্রান্সজেনিক ও ক্লোন প্রাণী",
+    ka:[
+      {q:"ট্রান্সজেনিক প্রাণী কী?",hot:true},
+      {q:"ক্লোন প্রাণী কী?",hot:true},
+      {q:"ডলি ভেড়া কীভাবে তৈরি হয়েছিল?",hot:true},
+      {q:"মাইক্রোইনজেকশন কৌশল কী?",hot:true},
+      {q:"ট্রান্সজেনিক ও ক্লোন প্রাণীর একটি পার্থক্য লেখো।",hot:true}
+    ],
+    kha:[
+      {q:"ট্রান্সজেনিক ও ক্লোন প্রাণীর গুরুত্ব উল্লেখ কর।",hot:false},
+      {q:"ট্রান্সজেনিক প্রাণীর সাথে ক্লোন প্রাণীর তুলনা কর।",hot:true}
+    ],
+    ga:[
+      {q:"ডলি সৃষ্টির কৌশলসমূহ বর্ণনা কর।",hot:true},
+      {q:"মাইক্রোইনজেকশন কৌশল দ্বারা ট্রান্সজেনিক প্রাণী উদ্ভাবনের পদ্ধতি বর্ণনা কর।",hot:true}
+    ]},
+  {id:"G9",emoji:"🔄",title:"GE অধ্যায় ৯: PCR ও জিন ক্লোনিং",
+    ka:[
+      {q:"PCR-এর পূর্ণরূপ কী?",hot:true},
+      {q:"PCR-এর তিনটি ধাপ কী কী?",hot:true},
+      {q:"Primer কী?",hot:true},
+      {q:"Taq polymerase কী?",hot:false},
+      {q:"লিংকার ও এডাপ্টারের পার্থক্য কী?",hot:false},
+      {q:"Invivo ও Invitro-র পার্থক্য কী?",hot:false}
+    ],
+    kha:[
+      {q:"জিন ক্লোনিং এর মূলনীতি উল্লেখ কর।",hot:true},
+      {q:"Invivo ও Invitro এর মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"লিংকার ও এডাপ্টারের মধ্যে পার্থক্য লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"PCR কী? PCR প্রযুক্তির বিভিন্ন ধাপসমূহ বর্ণনা কর।",hot:true}
+    ]},
+  {id:"G10",emoji:"🧭",title:"GE অধ্যায় ১০: মানব জিনোম প্রকল্প",
+    ka:[
+      {q:"Human Genome Project কী?",hot:true},
+      {q:"মানব জিনোম প্রকল্পের একটি উদ্দেশ্য লেখো।",hot:true},
+      {q:"মানব ক্লোনিং কেন বিতর্কিত?",hot:true},
+      {q:"জিনোম সিকোয়েন্সিং কী?",hot:true}
+    ],
+    kha:[
+      {q:"মানব কল্যাণে মানব জিনোম প্রজেক্টের বর্ণনা দাও।",hot:false},
+      {q:"জিনোম সিকুয়েন্সির প্রয়োগ লিখ।",hot:false},
+      {q:"মানব জিনোম প্রকল্পের উদ্দেশ্যসমূহ লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"মানব ক্লোনিং নিয়ে যে সমস্ত সম্ভাব্য বিতর্ক হতে পারে তা আলোচনা কর।",hot:false},
+      {q:"মানব জিনোম প্রকল্পের ভবিষ্যৎ সম্ভাবনা সম্পর্কে আলোচনা কর।",hot:false}
+    ]},
+  {id:"B1",emoji:"⚗️",title:"BT অধ্যায় ১–২: জৈব প্রযুক্তি ও IVF",
+    ka:[
+      {q:"জৈব প্রযুক্তি কী?",hot:true},
+      {q:"আণবিক ফার্মিং কী?",hot:true},
+      {q:"IVF-এর পূর্ণরূপ কী?",hot:true},
+      {q:"টেস্টটিউব শিশু কীভাবে জন্ম নেয়?",hot:true}
+    ],
+    kha:[
+      {q:"জৈব প্রযুক্তির অর্জনসমূহ বর্ণনা কর।",hot:false},
+      {q:"আণবিক ফার্মিং এর গুরুত্ব লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"ইন-ভিট্রো ফার্টিলাইজেশন বলতে কী বুঝ? টেস্টটিউব শিশুর জন্ম সম্পর্কে বর্ণনা কর।",hot:false}
+    ]},
+  {id:"B2",emoji:"🌱",title:"BT অধ্যায় ৩–৪: জৈব সার ও অণুজীব নির্বাচন",
+    ka:[
+      {q:"Biofertilizer কী?",hot:true},
+      {q:"জৈব কীটনাশকের একটি সুবিধা লেখো।",hot:true},
+      {q:"Strain improvement কী?",hot:true},
+      {q:"Rhizobium কী কাজ করে?",hot:false}
+    ],
+    kha:[
+      {q:"জৈব সারের ব্যবহার লিখ।",hot:false},
+      {q:"জৈব কীটনাশক সম্পর্কে লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"সংক্ষেপে অণুজীব নির্বাচন ও জাত উন্নয়ন বর্ণনা কর।",hot:true}
+    ]},
+  {id:"B3",emoji:"🍋",title:"BT অধ্যায় ৫: মেটাবোলাইট ও গাঁজন শিল্প",
+    ka:[
+      {q:"প্রাথমিক মেটাবোলাইট কী?",hot:true},
+      {q:"গৌণ মেটাবোলাইট কী?",hot:true},
+      {q:"সাইট্রিক এসিড কোন অণুজীব উৎপন্ন করে?",hot:true},
+      {q:"Poison ও Toxin-এর পার্থক্য কী?",hot:true},
+      {q:"পেনিসিলিন কোন ছত্রাক উৎপন্ন করে?",hot:true},
+      {q:"Mycotoxin কী?",hot:false}
+    ],
+    kha:[
+      {q:"প্রাথমিক ও গৌণ মেটাবোলাইটের মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"ল্যাকটিক ও সাইট্রিক এসিডের ব্যবহার লিখ।",hot:false},
+      {q:"Poison ও Toxin এর মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"চিকিৎসাক্ষেত্রে পেনিসিলিনের গুরুত্ব লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"সাইট্রিক এসিডের উৎপাদন কৌশল বর্ণনা কর।",hot:true},
+      {q:"বাণিজ্যিকভাবে হোয়াইট ওয়াইনের উৎপাদন কৌশল বর্ণনা কর।",hot:false},
+      {q:"এন্টিবায়োটিকের কার্যপদ্ধতি বর্ণনা কর।",hot:false},
+      {q:"মাইকোটক্সিন কী? মাইকোটক্সিনের প্রভাব আলোচনা কর।",hot:false}
+    ]},
+  {id:"B4",emoji:"🧲",title:"BT অধ্যায় ৮–৯: এনজাইম ও বায়োসেন্সর",
+    ka:[
+      {q:"হরমোন ও এনজাইমের একটি পার্থক্য লেখো।",hot:true},
+      {q:"এনজাইম অচলকরণ কী?",hot:true},
+      {q:"বায়োসেন্সর কী?",hot:true},
+      {q:"বায়োসেন্সরের একটি প্রয়োগ লেখো।",hot:true}
+    ],
+    kha:[
+      {q:"হরমোন ও এনজাইমের মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"চিকিৎসাক্ষেত্রে এনজাইমের ব্যবহার লিখ।",hot:false},
+      {q:"Restriction Enzyme তৈরিতে অণুজীবের ভূমিকা উল্লেখ কর।",hot:false},
+      {q:"অণুজীবীয় জৈব সংবেদক কী কাজে লাগে তা ব্যাখ্যা কর।",hot:false},
+      {q:"বায়োসেন্সর কী? এর প্রয়োগ বর্ণনা কর।",hot:true}
+    ],
+    ga:[
+      {q:"এনজাইম উৎপাদনে অণুজীবের ব্যবহার বর্ণনা কর।",hot:false},
+      {q:"এনজাইম অচলকরণের বিভিন্ন পদ্ধতি বা ক্যাপসুল আবদ্ধকরণ পদ্ধতি বর্ণনা কর।",hot:true}
+    ]},
+  {id:"B5",emoji:"🌾",title:"BT অধ্যায় ১০–১১: GM খাদ্য ও এন্টিবডি",
+    ka:[
+      {q:"GM খাদ্য কী?",hot:true},
+      {q:"Golden Rice কী?",hot:true},
+      {q:"GM খাদ্যের একটি উপকারিতা লেখো।",hot:true},
+      {q:"মনোক্লোনাল এন্টিবডি কী?",hot:true},
+      {q:"Hybridoma technology কী?",hot:false},
+      {q:"এন্টিজেন ও এন্টিবডির পার্থক্য কী?",hot:false}
+    ],
+    kha:[
+      {q:"খাদ্য শিল্পে rDNA এর ভূমিকা উল্লেখ কর।",hot:false},
+      {q:"জৈবপ্রযুক্তির সম্ভাব্য অপব্যবহারগুলো লিখ।",hot:false},
+      {q:"গোল্ডেন রাইসের গুরুত্ব বর্ণনা কর।",hot:false},
+      {q:"মনোক্লোনাল ও পলিক্লোনাল এন্টিবডির মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"এন্টিজেন ও এন্টিবডির মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"এন্টিবায়োটিকের নন-মেডিকেল বা চিকিৎসা বহির্ভূত ব্যবহার উল্লেখ কর।",hot:true}
+    ],
+    ga:[
+      {q:"GM খাদ্যের গুণগত মানসহ উপকারিতা ও অপকারিতা উল্লেখ কর।",hot:true},
+      {q:"জিন-তাত্ত্বিক রোগের জন্মপূর্ব শনাক্তকরণের দুটি পদ্ধতি আলোচনা কর।",hot:true},
+      {q:"হাইব্রিডোমা প্রযুক্তিতে মনোক্লোনাল এন্টিবডি উৎপাদন প্রক্রিয়া আলোচনা কর।",hot:false}
+    ]}
+],
+
+/* ── BSR — Biostatistics Part + Research Methodology Part ── */
+BSR:[
+  {id:"BS1",emoji:"📊",title:"Biostat অধ্যায় ১–৪: পরিসংখ্যান ও কেন্দ্রীয় প্রবণতা",
+    ka:[
+      {q:"জীব পরিসংখ্যান কী?",hot:true},
+      {q:"আয়তলেখ ও দণ্ডচিত্রের পার্থক্য কী?",hot:false},
+      {q:"অন্তর্ভুক্ত ও বহির্ভুক্ত শ্রেণিব্যাপ্তির পার্থক্য কী?",hot:true},
+      {q:"গাণিতিক গড় কী?",hot:true},
+      {q:"মধ্যমা কী?",hot:true},
+      {q:"প্রচুরক কী?",hot:true},
+      {q:"গড়, মধ্যমা ও প্রচুরকের সম্পর্ক কী?",hot:true}
+    ],
+    kha:[
+      {q:"আয়তলেখ ও দণ্ডচিত্রের মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"অন্তর্ভুক্ত শ্রেণিব্যাপ্তি ও বহির্ভুক্ত শ্রেণিব্যাপ্তির মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"গাণিতিক গড় ব্যবহারের সুবিধা ও অসুবিধাসমূহ উল্লেখ কর।",hot:true},
+      {q:"গাণিতিক গড়, মধ্যমা ও প্রচুরকের মধ্যে সম্পর্ক উল্লেখ কর।",hot:true}
+    ],
+    ga:[
+      {q:"উপাত্ত থেকে গণসংখ্যা নিবেশন সারণি তৈরি ও আয়তলেখ অঙ্কন।",hot:true}
+    ]},
+  {id:"BS2",emoji:"📐",title:"Biostat অধ্যায় ৫–৬: Z-test ও পরিমিত ব্যবধান",
+    ka:[
+      {q:"Z-test কী?",hot:true},
+      {q:"Z-test কখন ব্যবহার করা হয়?",hot:true},
+      {q:"পরিমিত ব্যবধান কী?",hot:true},
+      {q:"Standard error কী?",hot:true},
+      {q:"বিস্তার পরিমাপকে দ্বিতীয় পর্যায়ের গড় বলা হয় কেন?",hot:false}
+    ],
+    kha:[
+      {q:"কোন কোন ক্ষেত্রে Z-test করা হয়? / Z-test এর ব্যবহার উল্লেখ কর।",hot:true},
+      {q:"বিস্তার পরিমাপকে দ্বিতীয় পর্যায়ের গড় বলা হয় কেন?",hot:false},
+      {q:"পরিমিত ব্যবধানের ব্যবহার লিখ।",hot:false},
+      {q:"পরিমিত ব্যবধান ব্যবহারের সুবিধা ও অসুবিধা উল্লেখ কর।",hot:false}
+    ],
+    ga:[
+      {q:"Z-test সংক্রান্ত অংক।",hot:true},
+      {q:"পরিমিত ব্যবধান ও পরিমিত ত্রুটি নির্ণয় সংক্রান্ত অংক।",hot:true}
+    ]},
+  {id:"BS3",emoji:"🔢",title:"Biostat অধ্যায় ৭–৯: কল্পনা, T-test ও χ²",
+    ka:[
+      {q:"নাস্তি কল্পনা কী?",hot:true},
+      {q:"বিকল্প কল্পনা কী?",hot:true},
+      {q:"নাস্তি কল্পনা কখন গ্রহণ করা হয়?",hot:true},
+      {q:"T-test কী?",hot:true},
+      {q:"T-test ও χ²-এর একটি পার্থক্য লেখো।",hot:true},
+      {q:"Degree of freedom কী?",hot:true}
+    ],
+    kha:[
+      {q:"নাস্তি কল্পনা বলতে কী বুঝ? নাস্তি কল্পনা কখন গ্রহণ ও বাতিল করা হয়? / নাস্তি কল্পনার ব্যবহার উল্লেখ কর।",hot:true},
+      {q:"নাস্তি কল্পনা ও বিকল্প কল্পনার মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"কোন কোন ক্ষেত্রে T-test করা হয়? / T-test এর ব্যবহার উল্লেখ কর।",hot:true},
+      {q:"T-test ও X² এর মধ্যে পার্থক্য লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"T-test সংক্রান্ত অংক।",hot:true},
+      {q:"কাই-বর্গ সংক্রান্ত অংক (মেন্ডেলের জিন-তাত্ত্বিক অনুপাত)।",hot:false}
+    ]},
+  {id:"BS4",emoji:"📈",title:"Biostat অধ্যায় ১০–১১–১৩: সহ-সম্বন্ধ, ANOVA, নমুনায়ন",
+    ka:[
+      {q:"সহ-সম্বন্ধ (Correlation) কী?",hot:true},
+      {q:"নির্ভরণ (Regression) কী?",hot:true},
+      {q:"r = +১ ও r = -১ অর্থ কী?",hot:true},
+      {q:"ভেদাঙ্ক বিশ্লেষণ (ANOVA) কী?",hot:true},
+      {q:"স্তরিত ও গুচ্ছ নমুনায়নের পার্থক্য কী?",hot:false}
+    ],
+    kha:[
+      {q:"r = ১, r = -১, r>১ এবং r<-১ ব্যাখ্যা কর।",hot:false},
+      {q:"সহ-সম্বন্ধ সহগ এবং নির্ভরণের ব্যবহার লিখ।",hot:false},
+      {q:"সহ-সম্বন্ধ বা সংশ্লেষণ ও নির্ভরণের মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"পরিমিত ব্যবধান ও ভেদাঙ্কের মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"ভেদাঙ্ক বিশ্লেষণ বলতে কী বুঝ? জীববিজ্ঞানে ভেদাঙ্ক বিশ্লেষণের গুরুত্ব লিখ।",hot:true},
+      {q:"স্তরিত ও গুচ্ছ নমুনায়নের মধ্যে পার্থক্য লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"উপাত্ত থেকে সহ-সম্বন্ধ নির্ণয় সংক্রান্ত অংক।",hot:true}
+    ]},
+  {id:"RM1",emoji:"🔭",title:"Research অধ্যায় ১–২: গবেষণার ধারণা ও সমস্যা নির্ণয়",
+    ka:[
+      {q:"গবেষণা কী?",hot:true},
+      {q:"মৌলিক গবেষণা কী?",hot:true},
+      {q:"ফলিত গবেষণা কী?",hot:true},
+      {q:"একটি উত্তম গবেষণার দুটি বৈশিষ্ট্য লেখো।",hot:true},
+      {q:"গবেষণা সমস্যা কী?",hot:true},
+      {q:"Literature review কী?",hot:false}
+    ],
+    kha:[
+      {q:"একটি উত্তম গবেষণার বৈশিষ্ট্য বর্ণনা কর।",hot:true},
+      {q:"গবেষণার উদ্দেশ্য ও উদ্বুদ্ধকরণ সম্পর্কে লিখ।",hot:false},
+      {q:"মৌলিক ও ফলিত গবেষণার মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"সংক্ষেপে গবেষণা সমস্যা নির্ণয়ের কৌশল বর্ণনা কর।",hot:true},
+      {q:"গবেষণায় ব্যাখ্যাকরণের প্রয়োজনীয়তা সম্পর্কে লিখ।",hot:false},
+      {q:"গবেষণা সমস্যা নির্ণয়ের প্রয়োজনীয়তা লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"গবেষণা পরিকল্পনা প্রণয়নে বিবেচ্য বিষয়সমূহ বর্ণনা কর।",hot:true},
+      {q:"গবেষণার উদ্দেশ্য কী? গবেষণা পদ্ধতি ও গবেষণা কৌশলের সংজ্ঞা দাও।",hot:false},
+      {q:"গবেষণা প্রক্রিয়া কী? গবেষণা প্রক্রিয়ার ধাপসমূহ বর্ণনা কর।",hot:true},
+      {q:"বাংলাদেশের একজন গবেষক যেসকল সমস্যার সম্মুখীন হন এবং তার সম্ভাব্য সমাধান উল্লেখ কর।",hot:true},
+      {q:"বাংলাদেশের জীব গবেষণার প্রয়োজনীয়তা সম্পর্কে প্রবন্ধ লিখ।",hot:false},
+      {q:"একজন উত্তম গবেষকের গুণাবলি লিখ।",hot:false}
+    ]},
+  {id:"RM2",emoji:"📋",title:"Research অধ্যায় ৩–৫: নকশা, নমুনায়ন ও রেকর্ড",
+    ka:[
+      {q:"গবেষণা নকশা কী?",hot:true},
+      {q:"ল্যাটিন বর্গ নকশার একটি সুবিধা লেখো।",hot:true},
+      {q:"পরীক্ষণ নকশার দুটি মূলনীতি লেখো।",hot:true},
+      {q:"জীব-তাত্ত্বিক সারসংক্ষেপ কী?",hot:true},
+      {q:"SPSS কী?",hot:true}
+    ],
+    kha:[
+      {q:"ল্যাটিন বর্গ নকশার সুবিধা ও অসুবিধা উল্লেখ কর।",hot:false},
+      {q:"পরীক্ষণ নকশার মূলনীতিগুলো লিখ।",hot:true},
+      {q:"জীব-তাত্ত্বিক সারসংক্ষেপ কী? এর গুরুত্ব লিখ।",hot:false},
+      {q:"জীব-তাত্ত্বিক রেকর্ডের গুরুত্ব লিখ।",hot:true},
+      {q:"উদাহরণসহ সংক্ষেপে বায়োইনফরমেটিক্স সম্পর্কে লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"গবেষণা নকশা কী? বিভিন্ন ধরনের গবেষণা নকশার বর্ণনা দাও।",hot:true},
+      {q:"নমুনায়নের সুবিধা ও অসুবিধাসমূহ লিখ।",hot:true},
+      {q:"বিভিন্ন প্রকার নমুনায়ন নকশার নাম লিখ।",hot:false},
+      {q:"জীববিদ্যা গবেষণায় Software এর ভূমিকা বর্ণনা কর।",hot:true},
+      {q:"বিভিন্ন প্রকার জীব-তাত্ত্বিক রেকর্ডের বর্ণনা দাও।",hot:true}
+    ]},
+  {id:"RM3",emoji:"📝",title:"Research অধ্যায় ৭–৮: তথ্য অনুসন্ধান ও প্রতিবেদন",
+    ka:[
+      {q:"বায়োইনফরমেটিক্স কী?",hot:true},
+      {q:"তথ্যপঞ্জি (Bibliography) কী?",hot:true},
+      {q:"Abstract বা সারসংক্ষেপ কী?",hot:true},
+      {q:"তথ্য অনুসন্ধানের দুটি উৎস লেখো।",hot:false}
+    ],
+    kha:[
+      {q:"তথ্য অনুসন্ধান উৎসসমূহের উল্লেখ কর।",hot:false},
+      {q:"একটি গবেষণাপত্রে তথ্যপঞ্জি লেখার নিয়ম উদাহরণসহ লিখ।",hot:false},
+      {q:"বৈজ্ঞানিক গবেষণাপত্র প্রস্তুতির ধাপসমূহ লিখ।",hot:false},
+      {q:"একটি ভালো গবেষণা প্রতিবেদন লিখনের মানদণ্ড লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"একটি গবেষণা প্রতিবেদনের বিভিন্ন অংশের বর্ণনা দাও।",hot:true},
+      {q:"একটি বৈজ্ঞানিক গবেষণা প্রতিবেদন লেখার নিয়মাবলি লিখ।",hot:false}
+    ]}
+],
+
+/* ── MRB — Microbiology Part + Radiation Biology Part ── */
+MRB:[
+  {id:"M1",emoji:"🦠",title:"Micro অধ্যায় ১–২: পরিসর ও অবস্থান",
+    ka:[
+      {q:"অণুজীববিজ্ঞান কী?",hot:true},
+      {q:"Prokaryote ও Eukaryote-এর একটি পার্থক্য লেখো।",hot:true},
+      {q:"জৈবপ্রযুক্তিতে অণুজীবের একটি গুরুত্ব লেখো।",hot:true},
+      {q:"চিকিৎসাক্ষেত্রে অণুজীবের একটি ভূমিকা লেখো।",hot:true}
+    ],
+    kha:[
+      {q:"জৈবপ্রযুক্তিতে অণুজীবের গুরুত্ব বর্ণনা কর।",hot:false},
+      {q:"চিকিৎসাক্ষেত্রে অণুজীবের ভূমিকা লিখ।",hot:false},
+      {q:"জীবজগতে অণুজীবের অবস্থান সম্পর্কে যা জানো লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"সংক্ষেপে অণুজীববিজ্ঞানের পরিসর বর্ণনা কর।",hot:true}
+    ]},
+  {id:"M2",emoji:"🦠",title:"Micro অধ্যায় ৩: ভাইরাস",
+    ka:[
+      {q:"ভাইরাসকে জীবন্ত বস্তু বলা হয় না কেন?",hot:true},
+      {q:"লাইটিক চক্র কী?",hot:true},
+      {q:"লাইসোজেনিক চক্র কী?",hot:true},
+      {q:"DNA ও RNA ভাইরাসের পার্থক্য কী?",hot:true},
+      {q:"T2 ফাজের ক্যাপসিড কী দিয়ে গঠিত?",hot:true},
+      {q:"HIV কোন ধরনের ভাইরাস?",hot:true}
+    ],
+    kha:[
+      {q:"ভাইরাসকে একটি কোষ হিসেবে গণ্য করা হয় না কেন? / জীবজগতে ভাইরাসের অবস্থান সম্পর্কে লিখ।",hot:true},
+      {q:"লাইটিক ও লাইসোজেনিক চক্রের মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"DNA ভাইরাস ও RNA ভাইরাসের মধ্যে পার্থক্য লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"T2 ব্যাকটেরিওফাজের চিহ্নিত চিত্রসহ গঠন বর্ণনা কর।",hot:true},
+      {q:"HIV এর গঠন ও সংখ্যাবৃদ্ধি প্রক্রিয়া বর্ণনা কর।",hot:false},
+      {q:"ভাইরাসের লাইটিক ও লাইসোজেনিক চক্র বর্ণনা কর।",hot:true}
+    ]},
+  {id:"M3",emoji:"🔬",title:"Micro অধ্যায় ৪–৫: ব্যাকটেরিয়া ও মাইকোপ্লাজমা",
+    ka:[
+      {q:"ফ্লাজেলা ও পিলির পার্থক্য কী?",hot:true},
+      {q:"ব্যাকটেরিয়ার পুষ্টি প্রক্রিয়া কত প্রকার?",hot:false},
+      {q:"ফ্লাজেলার ভিত্তিতে ব্যাকটেরিয়া কত প্রকার?",hot:false},
+      {q:"কনজুগেশন কী?",hot:true},
+      {q:"মাইকোপ্লাজমা কী?",hot:true},
+      {q:"মাইকোপ্লাজমার কোষ প্রাচীর আছে কি?",hot:true}
+    ],
+    kha:[
+      {q:"ফ্লাজেলা ও পিলির মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"সংক্ষেপে ব্যাকটেরিয়ার পুষ্টি প্রক্রিয়া বর্ণনা কর।",hot:false},
+      {q:"ফ্লাজেলার ভিত্তিতে ব্যাকটেরিয়ার শ্রেণিবিন্যাস কর।",hot:false},
+      {q:"মাইকোপ্লাজমা ও ব্যাকটেরিয়ার মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"মাইকোপ্লাজমা কোষের বৈশিষ্ট্যসমূহ বর্ণনা কর।",hot:true}
+    ],
+    ga:[
+      {q:"ব্যাকটেরিয়াঘটিত মানুষের চারটি রোগের নাম, লক্ষণ, সংক্রমণ ও চিকিৎসা পদ্ধতি বর্ণনা কর।",hot:true},
+      {q:"ব্যাকটেরিয়ার বিভিন্ন ধরনের প্রজনন কৌশল বর্ণনা কর।",hot:false},
+      {q:"কনজুগেশন কী? ব্যাকটেরিয়ার কনজুগেশন পদ্ধতির বিবরণ দাও।",hot:true},
+      {q:"মাইকোপ্লাজমার অর্থনৈতিক গুরুত্ব লিখ।",hot:false},
+      {q:"অ্যাক্টিনোমাইসিটিসের অর্থনৈতিক গুরুত্ব বর্ণনা কর।",hot:false}
+    ]},
+  {id:"M4",emoji:"🌱",title:"Micro অধ্যায় ৬: ফলিত অণুজীববিজ্ঞান",
+    ka:[
+      {q:"এন্টিবায়োটিক কী?",hot:true},
+      {q:"ঈস্টের শিল্পগত একটি ব্যবহার লেখো।",hot:true},
+      {q:"ইনসুলিন তৈরিতে কোন অণুজীব ব্যবহৃত হয়?",hot:true},
+      {q:"এন্টিবায়োটিকের নন-মেডিকেল একটি ব্যবহার লেখো।",hot:true},
+      {q:"নাইট্রোজেন চক্রে অণুজীবের একটি ভূমিকা লেখো।",hot:true}
+    ],
+    kha:[
+      {q:"শিল্পে ঈস্টের ব্যবহার লিখ।",hot:false},
+      {q:"স্টেরয়েড ও ইনসুলিন তৈরিতে অণুজীবের ভূমিকা লিখ।",hot:false},
+      {q:"এন্টিবায়োটিকসমূহের কার্যপদ্ধতি বর্ণনা কর।",hot:false},
+      {q:"খাদ্য সংরক্ষণ পদ্ধতি সংক্ষেপে বর্ণনা কর।",hot:false},
+      {q:"এন্টিবায়োটিকের নন-মেডিকেল বা চিকিৎসা বহির্ভূত ব্যবহার লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"জীবভূ-রাসায়নিক চক্র কী? চিত্রসহ নাইট্রোজেন চক্র বর্ণনা কর।",hot:true},
+      {q:"পরিবেশ দূষণ নিয়ন্ত্রণে অণুজীবের ভূমিকা আলোচনা কর।",hot:true},
+      {q:"মাটির উর্বরতা বৃদ্ধিতে অণুজীবের ভূমিকা বর্ণনা কর।",hot:true},
+      {q:"জীবভূ-রাসায়নিক চক্র কী? চিত্রসহ কার্বন চক্র বর্ণনা কর।",hot:false},
+      {q:"এনজাইম উৎপাদন প্রক্রিয়া বর্ণনা কর।",hot:false}
+    ]},
+  {id:"R1",emoji:"☢️",title:"Radiation অধ্যায় ১–২: পরিমাপ ও রেডিও আইসোটোপ",
+    ka:[
+      {q:"তেজস্ক্রিয়তার SI একক কী?",hot:true},
+      {q:"Gray (Gy) কী?",hot:true},
+      {q:"কার্বন ডেটিং কী?",hot:true},
+      {q:"মহাজাগতিক রশ্মি কী?",hot:true},
+      {q:"রেডিও আইসোটোপ কী?",hot:true},
+      {q:"C-14-এর অর্ধায়ু কত?",hot:true}
+    ],
+    kha:[
+      {q:"বিকিরণ পরিমাপের বিভিন্ন একক বর্ণনা কর।",hot:true},
+      {q:"উদাহরণসহ কার্বন ডেটিং এর বিবরণ দাও।",hot:false},
+      {q:"মহাজাগতিক রশ্মি কী? মানবদেহের উপর এর প্রভাব লিখ।",hot:false},
+      {q:"চিকিৎসাক্ষেত্রে রেডিও আইসোটোপের ব্যবহার লিখ।",hot:true},
+      {q:"আইসোটোপ কী? এর বৈশিষ্ট্য লিখ।",hot:false},
+      {q:"কৃষিক্ষেত্রে রেডিও আইসোটোপের ব্যবহার লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"জীববিদ্যা গবেষণায় রেডিও আইসোটোপের ব্যবহার বর্ণনা কর।",hot:true},
+      {q:"C¹⁴ এর অর্ধায়ু নির্ণয়ের পদ্ধতি বর্ণনা কর।",hot:true}
+    ]},
+  {id:"R2",emoji:"🏥",title:"Radiation অধ্যায় ৩–৫: খাদ্য সংরক্ষণ, X-ray ও নিরাপত্তা",
+    ka:[
+      {q:"খাদ্য সংরক্ষণে বিকিরণের একটি সুবিধা লেখো।",hot:true},
+      {q:"রঞ্জন রশ্মি (X-ray) কী?",hot:true},
+      {q:"CT স্ক্যান ও MRI-এর একটি পার্থক্য লেখো।",hot:true},
+      {q:"MRI-এর পূর্ণরূপ কী?",hot:true},
+      {q:"তেজস্ক্রিয়তার অনুমোদিত মাত্রার একক লেখো।",hot:true}
+    ],
+    kha:[
+      {q:"খাদ্য সংরক্ষণে তেজস্ক্রিয় বিকিরণের ক্ষতিকর দিকগুলো লিখ।",hot:false},
+      {q:"CT স্ক্যান ও MRI এর মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"তেজস্ক্রিয় প্রতিরোধ নীতিসমূহ লিখ।",hot:false},
+      {q:"তেজস্ক্রিয়তার অনুমোদিত মাত্রার বর্ণনা দাও।",hot:true}
+    ],
+    ga:[
+      {q:"খাদ্য সংরক্ষণ ও রক্ষায় বিকিরণের ব্যবহার বর্ণনা কর।",hot:true},
+      {q:"রঞ্জন রশ্মি কী? রঞ্জন রশ্মি ব্যবহারের সুবিধা ও অসুবিধা বর্ণনা কর।",hot:true},
+      {q:"রঞ্জন রশ্মির প্রকারভেদ, ব্যবহার ও প্রভাবসমূহ উল্লেখ কর।",hot:false},
+      {q:"রেডিয়েশনের ঝুঁকি থেকে বাঁচার জন্য আমাদের কী করা উচিত?",hot:true},
+      {q:"বাংলাদেশের তেজস্ক্রিয় নিরাপত্তা আইন বর্ণনা কর।",hot:true}
+    ]},
+  {id:"R3",emoji:"☣️",title:"Radiation অধ্যায় ৬–৭: জীবদেহে প্রভাব ও পারমাণবিক বিস্ফোরণ",
+    ka:[
+      {q:"আয়নায়ন প্রকোষ্ঠ কী?",hot:true},
+      {q:"তেজস্ক্রিয় বিকিরণের প্রজননিক প্রভাব কী?",hot:true},
+      {q:"ভ্রূণীয় বিবর্ধনে বিকিরণের একটি প্রভাব লেখো।",hot:true},
+      {q:"পারমাণবিক বিস্ফোরণের একটি প্রভাব লেখো।",hot:true},
+      {q:"পরমাণু গবেষণার একটি উদ্দেশ্য লেখো।",hot:true}
+    ],
+    kha:[
+      {q:"আয়নায়ন কী? আয়নায়ন প্রকোষ্ঠের ব্যবহার লিখ।",hot:true},
+      {q:"জীবদেহে আয়োডিনের প্রভাব লিখ।",hot:false},
+      {q:"তেজস্ক্রিয় বিকিরণের প্রজননিক প্রভাব আলোচনা কর।",hot:true},
+      {q:"পরমাণুগবেষণার উদ্দেশ্যসমূহ কী কী?",hot:true}
+    ],
+    ga:[
+      {q:"জীবদেহে বিকিরণের প্রভাব বর্ণনা কর।",hot:true},
+      {q:"জীবদেহের উপর বিস্ফোরক পদার্থের প্রভাব বর্ণনা কর।",hot:false},
+      {q:"ভ্রূণীয় বিবর্ধনের উপর বিকিরণের প্রভাব লিখ।",hot:true},
+      {q:"পারমাণবিক বিস্ফোরণের প্রভাব বর্ণনা কর।",hot:true}
+    ]}
+],
+
+/* ── PAR — Parasitology ── */
+PAR:[
+  {id:"P1",emoji:"🔬",title:"অধ্যায় ১: মূলধারণা",
+    ka:[
+      {q:"পরজীবী কাকে বলে?",hot:true},
+      {q:"পোষক কত প্রকার ও কী কী?",hot:true},
+      {q:"নির্দিষ্ট ও মধ্যবর্তী পোষকের পার্থক্য কী?",hot:true},
+      {q:"ইনফেকশন ও ইনফেসটেশন কী?",hot:false},
+      {q:"ফোরেসি কী?",hot:false},
+      {q:"প্যাথোজেন ও পরজীবীর পার্থক্য কী?",hot:true},
+      {q:"এক্টোপরজীবী ও এন্ডোপরজীবীর পার্থক্য কী?",hot:true}
+    ],
+    kha:[
+      {q:"পোষকের প্রকারভেদ বর্ণনা কর।",hot:true},
+      {q:"পরজীবিতা ও মিথোজীবিতার মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"ইনফেকশন ও ইনফেসটেশন বলতে কী বুঝ? উদাহরণসহ ব্যাখ্যা কর।",hot:false},
+      {q:"ফোরেসি কী? উদাহরণসহ লিখ।",hot:false},
+      {q:"প্যাথোজেন ও পরজীবীর মধ্যে পার্থক্য লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"পরজীবীবিদ্যার পরিসর আলোচনা কর।",hot:true},
+      {q:"পরজীবী কী? এর প্রকারভেদ বর্ণনা কর।",hot:true}
+    ]},
+  {id:"P2",emoji:"🦠",title:"অধ্যায় ২: গঠন ও সংক্রমণ",
+    ka:[
+      {q:"হেলমিন্থ পরজীবী কী?",hot:true},
+      {q:"Cestoda শ্রেণির চোষক কী নামে পরিচিত?",hot:true},
+      {q:"Platyhelminthes-এর আসঞ্জন অঙ্গ কী?",hot:true},
+      {q:"Taenia solium-এর রোগের নাম কী?",hot:true},
+      {q:"Rostellum কী?",hot:false},
+      {q:"Scolex কী?",hot:false}
+    ],
+    kha:[
+      {q:"পোষকের জননাঙ্গ গঠনে পরজীবী কীভাবে প্রভাব ফেলে?",hot:false},
+      {q:"চিহ্নিত চিত্রসহ একটি হেলমিন্থ পরজীবীর আঙ্গিক গঠন বর্ণনা কর।",hot:false}
+    ],
+    ga:[
+      {q:"পরজীবীর স্থানান্তর ও সংক্রমণ পদ্ধতি বর্ণনা কর।",hot:true},
+      {q:"Cestoda শ্রেণির প্রাণীদের বিভিন্ন ধরনের চোষকের বর্ণনা দাও।",hot:false},
+      {q:"Platyhelminthes পর্বের প্রাণীদের আসঞ্জন অঙ্গের বর্ণনা দাও।",hot:true},
+      {q:"চিত্রসহ Taenia solium এর প্রজননতন্ত্র বর্ণনা কর।",hot:false}
+    ]},
+  {id:"P3",emoji:"🪱",title:"অধ্যায় ৩: হেলমিন্থ পরজীবী ও জীবনচক্র",
+    ka:[
+      {q:"হুকওয়ার্মের বৈজ্ঞানিক নাম লেখো।",hot:true},
+      {q:"মিরাসিডিয়াম কী?",hot:true},
+      {q:"সার্কারিয়া কী?",hot:true},
+      {q:"Monogenea ও Digenea-র একটি পার্থক্য লেখো।",hot:false},
+      {q:"রেবডিটিফর্ম লার্ভা কী?",hot:false},
+      {q:"Entamoeba histolytica-র ট্রোফোজোয়েট দশা কী?",hot:false}
+    ],
+    kha:[
+      {q:"পুরুষ ও স্ত্রী হুকওয়ার্মের মধ্যে পার্থক্য লিখ। / পুরুষ Wuchereria এবং স্ত্রী Wuchereria এর মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"ম্যাগনা দশা ও মাইনুটা দশার মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"Monogenea ও Digenea এর মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"মিরাসিডিয়াম ও সার্কারিয়া লার্ভা দশার মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"রেবডিটিফর্ম ও ফিলারিফর্ম লার্ভার মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"Entamoeba histolytica-র ট্রোফোজোয়েট দশার বর্ণনা দাও।",hot:false}
+    ],
+    ga:[
+      {q:"যেকোনো একটি দ্বি-পোষকীয় ট্রিমাটোড পরজীবীর জীবনচক্র ও রোগতত্ত্ব বর্ণনা কর।",hot:true},
+      {q:"হুকওয়ার্মের জীবনচক্র, রোগতত্ত্ব ও প্রতিকার উল্লেখ কর।",hot:false},
+      {q:"যেকোনো একটি এক-পোষকীয় পরজীবী বা Ascaris এর জীবনচক্র বর্ণনা কর।",hot:false},
+      {q:"Eimeria-র জীবনচক্র, রোগতত্ত্ব ও প্রতিকার আলোচনা কর।",hot:true}
+    ]},
+  {id:"P4",emoji:"📊",title:"অধ্যায় ৪: মহামারীবিদ্যা",
+    ka:[
+      {q:"এপিডেমিওলজি কী?",hot:true},
+      {q:"জুনোসিস কী?",hot:true},
+      {q:"Incidence ও Prevalence-এর পার্থক্য কী?",hot:true},
+      {q:"Reservoir host কী?",hot:true}
+    ],
+    kha:[
+      {q:"এপিডেমিওলজি ও জুনোসিস বলতে কী বুঝ?",hot:false},
+      {q:"প্রারম্ভিক পর্যায়ে রোগ নির্ণয়ের প্রয়োজনীয়তা উল্লেখ কর।",hot:false}
+    ],
+    ga:[
+      {q:"মহামারী পরিমাপের পদ্ধতিসমূহ আলোচনা কর।",hot:true},
+      {q:"মহামারি রোগ নিয়ন্ত্রণ পদ্ধতি বর্ণনা কর।",hot:false}
+    ]},
+  {id:"P5",emoji:"🌡️",title:"অধ্যায় ৫: মানবদেহের পরজীবীঘটিত রোগ",
+    ka:[
+      {q:"African Trypanosomiasis-এর কারক কী?",hot:true},
+      {q:"Leishmaniasis বা কালাজ্বর কোন পরজীবী ঘটায়?",hot:true},
+      {q:"ডেঙ্গু জ্বরের কারক ভাইরাসের নাম কী?",hot:true},
+      {q:"প্লেগ কোন ব্যাকটেরিয়া ঘটায়?",hot:true},
+      {q:"Sandfly কোন রোগের বাহক?",hot:true}
+    ],
+    kha:[
+      {q:"আফ্রিকান ও আমেরিকান Trypanosomiasis এর মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"Schistosomiasis এর কারণ, লক্ষণ ও প্রতিকার বর্ণনা কর।",hot:false},
+      {q:"মানবদেহে রোগ সৃষ্টিকারী চারটি প্রোটোজোয়ান পরজীবীর বৈজ্ঞানিক নাম ও তাদের সৃষ্ট রোগের নাম লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"Leishmaniasis কী? Leishmaniasis বা কালাজ্বরের জীবনচক্র, রোগতত্ত্ব ও প্রতিকার বর্ণনা কর।",hot:true},
+      {q:"ডেঙ্গু জ্বরের কারণ, লক্ষণ ও প্রতিকার বর্ণনা কর।",hot:true},
+      {q:"প্লেগ কী? এর কারণ, লক্ষণ ও প্রতিকার বর্ণনা কর।",hot:true}
+    ]},
+  {id:"P6",emoji:"🦠",title:"অধ্যায় ৬: ভাইরাসঘটিত ও জুনোটিক রোগ",
+    ka:[
+      {q:"বার্ড ফ্লু কী?",hot:true},
+      {q:"নিপাহ ভাইরাস কীভাবে ছড়ায়?",hot:true},
+      {q:"জলাতঙ্ক রোগের কারক কী?",hot:true},
+      {q:"জুনোটিক রোগ কাকে বলে?",hot:true}
+    ],
+    kha:[
+      {q:"বার্ড ফ্লু ও সোয়াইন ফ্লু বলতে কী বুঝ? ব্যাখ্যা কর।",hot:false},
+      {q:"নিপাহ ভাইরাস দ্বারা সৃষ্টি রোগের লক্ষণসমূহ ও সংক্রমণ পদ্ধতি বর্ণনা কর।",hot:false}
+    ],
+    ga:[
+      {q:"জলাতঙ্ক রোগের কারণ, লক্ষণ ও প্রতিকার বর্ণনা কর।",hot:true},
+      {q:"জুনোটিক রোগের কারণগুলো ব্যাখ্যা কর।",hot:false},
+      {q:"ব্যাকটেরিয়াঘটিত দুটি জুনোটিক রোগের বর্ণনা দাও।",hot:true}
+    ]},
+  {id:"P7",emoji:"🐄",title:"অধ্যায় ৭: ভেটেরিনারি পরজীবীবিদ্যা",
+    ka:[
+      {q:"ড্রপসি কী?",hot:true},
+      {q:"কক্সিডিওসিস কোন পরজীবী ঘটায়?",hot:true},
+      {q:"Histomonas কোন প্রাণীকে আক্রমণ করে?",hot:true},
+      {q:"Babesia কী ধরনের পরজীবী?",hot:false},
+      {q:"মাছের একটি প্রোটোজোয়াঘটিত রোগের নাম লেখো।",hot:true}
+    ],
+    kha:[
+      {q:"ড্রপসি কী? এর কারণ, লক্ষণ ও প্রতিকার লিখ।",hot:false},
+      {q:"বৈজ্ঞানিক নামসহ মাছের চারটি প্রোটোজোয়াঘটিত রোগের নাম লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"কক্সিডিওসিস কী? এর কারণ, লক্ষণ ও প্রতিকার বর্ণনা কর।",hot:true},
+      {q:"Haemonchus এর অঙ্গসংস্থান বর্ণনা কর।",hot:false},
+      {q:"Histomonas এর জীবনচক্র, রোগতত্ত্ব ও প্রতিকার বর্ণনা কর।",hot:true},
+      {q:"Babesia পরজীবীর জীবনচক্র, রোগতত্ত্ব ও প্রতিকার বর্ণনা কর।",hot:false},
+      {q:"গবাদি পশুতে পরজীবী দ্বারা সৃষ্ট যেকোনো দুটি রোগের বর্ণনা দাও।",hot:true}
+    ]}
+],
+
+/* ── ENT — Entomology ── */
+ENT:[
+  {id:"E1",emoji:"🦟",title:"অধ্যায় ১: বাহ্যিক গঠন",
+    ka:[
+      {q:"টেনটোরিয়াম কী?",hot:true},
+      {q:"স্ক্লেরাইট কী?",hot:false},
+      {q:"সূচার কী?",hot:true},
+      {q:"পতঙ্গের আদর্শ পদে কয়টি খণ্ড আছে?",hot:true},
+      {q:"পতঙ্গের মুখোপাঙ্গের দুটি অংশের নাম লেখো।",hot:true},
+      {q:"পতঙ্গের বক্ষ কয়টি খণ্ড নিয়ে গঠিত?",hot:false}
+    ],
+    kha:[
+      {q:"টেনটোরিয়াম কী? টেনটোরিয়ামের গঠন ও কাজ বর্ণনা কর।",hot:true},
+      {q:"সূচার ও স্ক্লেরাইটের মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"পতঙ্গের আদর্শ পদের গঠন বর্ণনা কর।",hot:true}
+    ],
+    ga:[
+      {q:"পতঙ্গে প্রাপ্ত বিভিন্ন ধরনের পায়ের অভিযোজনিক পরিবর্তনগুলো বর্ণনা কর।",hot:true},
+      {q:"পতঙ্গের বিভিন্ন ধরনের মুখোপাঙ্গের বর্ণনা দাও।",hot:false},
+      {q:"সূচার কী? পতঙ্গের মস্তকের সূচারসমূহ বর্ণনা কর।",hot:true}
+    ]},
+  {id:"E2",emoji:"🦋",title:"অধ্যায় ২: শ্রেণিবিন্যাস",
+    ka:[
+      {q:"Protura-কে আদর্শ পতঙ্গ বলা হয় না কেন?",hot:true},
+      {q:"Beetle ও Weevil-এর একটি পার্থক্য লেখো।",hot:false},
+      {q:"প্রজাপতি ও মথের একটি পার্থক্য লেখো।",hot:true},
+      {q:"অপক্ষল পতঙ্গ কাকে বলে?",hot:false},
+      {q:"Thysanura-র একটি উদাহরণ দাও।",hot:true},
+      {q:"Isoptera কাদের বলা হয়? একটি উদাহরণ দাও।",hot:true}
+    ],
+    kha:[
+      {q:"Protura কে আদর্শ পতঙ্গ হিসেবে ধরা হয় না কেন?",hot:true},
+      {q:"Beetle ও Weevil এর মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"প্রজাপতি ও মথের মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"উদাহরণসহ অপক্ষল পতঙ্গের শনাক্তকারী বৈশিষ্ট্য লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"বৈজ্ঞানিক নামের উদাহরণসহ নিম্নলিখিত বর্গসমূহের শনাক্তকারী বৈশিষ্ট্য লিখ: Thysanura, Odonata, Hemiptera, Protura, Lepidoptera, Isoptera, Collembola, Orthoptera, Coleoptera।",hot:true}
+    ]},
+  {id:"E3",emoji:"🐛",title:"অধ্যায় ৩: রূপান্তর ও পরিস্ফুটন",
+    ka:[
+      {q:"লার্ভা ও নিম্ফের একটি পার্থক্য লেখো।",hot:true},
+      {q:"Instar কী?",hot:true},
+      {q:"Stadium কী?",hot:true},
+      {q:"মোল্টিং কী?",hot:true},
+      {q:"পিউপা কী?",hot:true},
+      {q:"হলোমেটাবোলা কী?",hot:false}
+    ],
+    kha:[
+      {q:"লার্ভা ও নিম্ফের মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"Instar ও Stadium এর মধ্যে পার্থক্য লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"মোল্টিং বলতে কী বুঝ? পতঙ্গে প্রাপ্ত বিভিন্ন ধরনের পিউপার বর্ণনা দাও।",hot:true},
+      {q:"রূপান্তর কী? পতঙ্গের বিভিন্ন ধরনের রূপান্তর আলোচনা কর।",hot:true}
+    ]},
+  {id:"E4",emoji:"🍯",title:"অধ্যায় ৪: উপকারী পতঙ্গ",
+    ka:[
+      {q:"মধুর দুটি উপাদান লেখো।",hot:true},
+      {q:"মোমের দুটি ব্যবহার লেখো।",hot:true},
+      {q:"লাক্ষা পোকার বৈজ্ঞানিক নাম লেখো।",hot:true},
+      {q:"রেশম পোকার বৈজ্ঞানিক নাম লেখো।",hot:true},
+      {q:"লাক্ষা চাষে হোস্ট উদ্ভিদের একটি উদাহরণ দাও।",hot:false}
+    ],
+    kha:[
+      {q:"লাক্ষা চাষের বিবরণ দাও।",hot:false},
+      {q:"মধু ও মোমের ব্যবহার লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"উপকারী পতঙ্গসমূহের বাণিজ্যিক মূল্য আলোচনা কর।",hot:false},
+      {q:"মৌমাছি, রেশম ও লাক্ষা পোকার আর্থ-সামাজিক গুরুত্ব আলোচনা কর।",hot:true}
+    ]},
+  {id:"E5",emoji:"🌿",title:"অধ্যায় ৫–৬: ক্ষতিকর পতঙ্গ ও জৈবিক দমন",
+    ka:[
+      {q:"Pest কী?",hot:true},
+      {q:"Primary pest ও Secondary pest-এর পার্থক্য কী?",hot:true},
+      {q:"গুদামজাত শস্যের একটি ক্ষতিকর পতঙ্গের বৈজ্ঞানিক নাম লেখো।",hot:true},
+      {q:"জৈবিক দমন কাকে বলে?",hot:true},
+      {q:"পতঙ্গ বন্ধ্যাকরণ পদ্ধতি কী?",hot:false},
+      {q:"Legal control method কী?",hot:false}
+    ],
+    kha:[
+      {q:"গুদামজাত শস্যের চারটি ক্ষতিকর পতঙ্গের বৈজ্ঞানিক নাম ও ক্ষতির ধরন উল্লেখ কর।",hot:true},
+      {q:"প্রাইমারি ও সেকেন্ডারি পেস্টের মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"Legal control method বলতে কী বুঝ? সংক্ষেপে বর্ণনা কর।",hot:false},
+      {q:"পতঙ্গের জৈবিক দমনের সুবিধা ও অসুবিধা আলোচনা কর।",hot:true}
+    ],
+    ga:[
+      {q:"Pest কী? বিভিন্ন প্রকার Pest এর বর্ণনা দাও।",hot:false},
+      {q:"জীবজ দমনে পরজীবী ও অণুজীবের ভূমিকা বর্ণনা কর।",hot:false},
+      {q:"পতঙ্গ বন্ধ্যাকরণ পদ্ধতি বর্ণনা কর।",hot:false}
+    ]},
+  {id:"E6",emoji:"🧪",title:"অধ্যায় ৭–৮: রাসায়নিক দমন ও IPM",
+    ka:[
+      {q:"সিনারজিস্ট কী?",hot:true},
+      {q:"Attractant কী?",hot:true},
+      {q:"Repellent কী?",hot:true},
+      {q:"Antifeedant কী?",hot:true},
+      {q:"Chemosterilant কী?",hot:true},
+      {q:"IPM-এর পূর্ণরূপ।",hot:true},
+      {q:"Economic Threshold Level (ETL) কী?",hot:false}
+    ],
+    kha:[
+      {q:"রাসায়নিক কীটনাশকের ক্ষতিকর দিকসমূহ বর্ণনা কর।",hot:true},
+      {q:"ক্লোরিনেটেড হাইড্রোকার্বন ও অর্গানোফসফরাস কীটনাশকের মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"সিনারজিস্ট কী? এর কার্যাবলি বর্ণনা কর।",hot:true},
+      {q:"IPM এর সুবিধা ও অসুবিধাসমূহ উল্লেখ কর।",hot:false}
+    ],
+    ga:[
+      {q:"আপদ নিয়ন্ত্রণের উপর ভিত্তি করে Pesticides এর শ্রেণিবিন্যাস কর।",hot:false},
+      {q:"Attractants, Repellents, Antifeedants এবং Chemosterilants এর উদাহরণসহ ব্যবহার লিখ।",hot:true},
+      {q:"সমন্বিত আপদ ব্যবস্থাপনার (IPM) কৌশলগুলোর বিবরণ দাও। / সমন্বিত বালাই দমন ব্যবস্থাপনার বিভিন্ন ধাপগুলো কী কী?",hot:false},
+      {q:"IPM কী? এর লক্ষ্য ও উদ্দেশ্য লিখ।",hot:false}
+    ]},
+  {id:"E7",emoji:"🌾",title:"অধ্যায় ৯: ফসলের ক্ষতিকর পতঙ্গ",
+    ka:[
+      {q:"আখের ডগার মাজরা পোকার বৈজ্ঞানিক নাম লেখো।",hot:true},
+      {q:"পাটের বিছাপোকার বৈজ্ঞানিক নাম লেখো।",hot:true},
+      {q:"Dead heart কী?",hot:true},
+      {q:"মাজরা পোকার ক্ষতির একটি লক্ষণ উল্লেখ করো।",hot:false}
+    ],
+    kha:[],
+    ga:[
+      {q:"আখের ডগার মাজরা পোকার জীবনচক্র, ক্ষতির ধরন এবং নিয়ন্ত্রণ পদ্ধতি বর্ণনা কর।",hot:true},
+      {q:"পাটের বিছাপোকার জীবনচক্র, ক্ষতির ধরন এবং নিয়ন্ত্রণ পদ্ধতি বর্ণনা কর।",hot:true}
+    ]},
+  {id:"E8",emoji:"🦟",title:"অধ্যায় ১০: মেডিকেল এন্টোমোলজি",
+    ka:[
+      {q:"মায়াসিস কী?",hot:true},
+      {q:"ভেক্টর কী?",hot:true},
+      {q:"মশাবাহিত একটি রোগের নাম লেখো।",hot:true},
+      {q:"Sandfly কোন রোগ ছড়ায়?",hot:true},
+      {q:"Flea ও Fly-এর একটি পার্থক্য লেখো।",hot:false},
+      {q:"মাইটবাহিত একটি রোগের নাম লেখো।",hot:true}
+    ],
+    kha:[
+      {q:"মশাবাহিত চারটি পোষক, প্যাথোজেন ও রোগের নাম লিখ।",hot:true},
+      {q:"Flea এবং Fly এর মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"মাইটবাহিত চারটি রোগের নাম, পোষক ও প্যাথোজেনের নাম লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"Sandfly এর জীবনচক্র, এর দ্বারা সৃষ্ট রোগের লক্ষণ ও প্রতিকার বর্ণনা কর।",hot:true},
+      {q:"টিকস ও মাইটসের মেডিকেল এবং ভেটেরিনারি গুরুত্ব লিখ।",hot:false},
+      {q:"মায়াসিস কী? বিভিন্ন প্রকার মায়াসিসের বিবরণ দাও।",hot:true}
+    ]}
+],
+
+/* ── FSB — Fisheries Biology ── */
+FSB:[
+  {id:"F1",emoji:"🦈",title:"অধ্যায় ১–২: উৎপত্তি, ফুলকা ও শারীরতত্ত্ব",
+    ka:[
+      {q:"Ostracoderm ও Placoderm-এর একটি পার্থক্য লেখো।",hot:false},
+      {q:"Skates ও Ray-এর একটি পার্থক্য লেখো।",hot:true},
+      {q:"মাছের আদর্শ ফুলকায় কয়টি ফুলকা খণ্ড থাকে?",hot:true},
+      {q:"শাকাশী মাছের অন্ত্র কেমন হয়?",hot:true},
+      {q:"রুই মাছের ধমনীতন্ত্রে Ventral aorta কী কাজ করে?",hot:true},
+      {q:"Teleost মাছের হৃদপিণ্ডে কয়টি প্রকোষ্ঠ?",hot:false}
+    ],
+    kha:[
+      {q:"Ostracoderm ও Placoderm এর মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"Skates ও Ray এর বৈশিষ্ট্য বা এদের মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"মাছের একটি আদর্শ ফুলকার গঠন ও কাজ বর্ণনা কর।",hot:true},
+      {q:"কোমলাস্থি ও কঠিনাস্থি মাছের রক্ত সংবহনতন্ত্রের মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"শাকাশী ও মাংসাশী মাছের পৌষ্টিকতন্ত্রের মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"মাছের বিভিন্ন ধরনের খাদ্যাভ্যাসের বর্ণনা দাও।",hot:false}
+    ],
+    ga:[
+      {q:"জাতিজনি বৃক্ষ অঙ্কন করে মাছের জাতিজনির বর্ণনা দাও।",hot:false},
+      {q:"একটি মাংসাশী বা তরুণাস্থি মাছের পৌষ্টিকতন্ত্রের বর্ণনা দাও।",hot:false},
+      {q:"রুই মাছের ধমনীতন্ত্র বর্ণনা কর।",hot:true}
+    ]},
+  {id:"F2",emoji:"🔬",title:"অধ্যায় ৩–৪: শ্রেণিবিন্যাস ও কার্প মাছ",
+    ka:[
+      {q:"ট্যাক্সোনমিক ফর্মুলা কী?",hot:true},
+      {q:"মেরিস্টিক স্টাডি কী?",hot:true},
+      {q:"শনাক্তকরণ ও শ্রেণিবিন্যাসের একটি পার্থক্য লেখো।",hot:true},
+      {q:"মেজর কার্প ও মাইনর কার্পের একটি পার্থক্য লেখো।",hot:true},
+      {q:"রুই মাছের বৈজ্ঞানিক নাম কী?",hot:false}
+    ],
+    kha:[
+      {q:"মৎস্য প্রজাতি শনাক্তকরণের সমস্যাগুলো আলোচনা কর।",hot:false},
+      {q:"শনাক্তকরণ ও শ্রেণিবিন্যাসের মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"ট্যাক্সোনমিক ফর্মুলা বলতে কী বুঝ? এর সংক্ষিপ্ত বিবরণ দাও।",hot:false},
+      {q:"শিকারী মাছ সম্পর্কে একটি সংক্ষিপ্ত বিবরণ দাও।",hot:false},
+      {q:"মেজর কার্প ও মাইনর কার্পের মধ্যে পার্থক্য লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"\"মেরিস্টিক স্টাডি ছাড়া ট্যাক্সোনমিক সূত্র প্রণয়ন সম্ভব নয়\" — ব্যাখ্যা কর।",hot:true},
+      {q:"একটি করে উদাহরণ (বৈজ্ঞানিক নাম) ও চারটি করে শনাক্তকারী বৈশিষ্ট্যসহ স্বাদু পানির কঠিনাস্থি মাছের পাঁচটি বর্গের নাম লিখ।",hot:true},
+      {q:"কার্প কী? দুটি কার্প মাছের সাধারণ নাম, বৈজ্ঞানিক নাম, স্বভাব, বাসস্থান ও অর্থনৈতিক গুরুত্ব লিখ।",hot:false},
+      {q:"বাংলাদেশে কার্প ও ক্যাটফিশের অর্থনৈতিক গুরুত্ব আলোচনা কর।",hot:true}
+    ]},
+  {id:"F3",emoji:"⚗️",title:"অধ্যায় ৫: অভিযোজন, প্রজনন ও অন্তঃক্ষরা",
+    ka:[
+      {q:"স্টেনোহ্যালাইন মাছ কাকে বলে?",hot:true},
+      {q:"ইউরোহ্যালাইন মাছ কাকে বলে?",hot:true},
+      {q:"ওয়েবেরিয়ান অসিকলস কয়টি অস্থি নিয়ে গঠিত?",hot:true},
+      {q:"অসমোরেগুলেশন কী?",hot:true},
+      {q:"সহায়ক শ্বসন অঙ্গ কী?",hot:true},
+      {q:"যৌন দ্বিরূপতা কাকে বলে?",hot:true},
+      {q:"ডিম্বধারণ ক্ষমতা (Fecundity) কী?",hot:true},
+      {q:"Oviparous ও Ovoviviparous মাছের পার্থক্য কী?",hot:false}
+    ],
+    kha:[
+      {q:"স্টেনোহ্যালাইন ও ইউরোহ্যালাইন মাছের বৈশিষ্ট্য বা এদের মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"মাছের ওয়েবেরিয়ান অসিকলস এর গঠন ও কাজ লিখ।",hot:true},
+      {q:"মাছের জলজ অভিযোজনের সংক্ষিপ্ত বিবরণ দাও।",hot:false},
+      {q:"Oviparous ও Ovoviviparous এর মধ্যে পার্থক্য লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"বাংলাদেশে প্রাপ্ত স্বাদুপানির মাছের অতিরিক্ত শ্বসন অঙ্গসমূহ বা সহায়ক শ্বসন অঙ্গসমূহের বর্ণনা দাও।",hot:true},
+      {q:"একটি কঠিনাস্থি মাছের চিত্র অঙ্কন করে এর বিভিন্ন অন্তঃক্ষরা গ্রন্থিসমূহের অবস্থান চিহ্নিতপূর্বক বিস্তারিত বিবরণ দাও।",hot:true},
+      {q:"ডিম্বধারণ ক্ষমতা বলতে কী বুঝ? মাছের ডিম্বধারণ ক্ষমতা নির্ণয়ের পদ্ধতিসমূহ বর্ণনা কর।",hot:true},
+      {q:"স্বাদুপানির ও সামুদ্রিক মাছের অসমোরেগুলেশন আলোচনা কর।",hot:true},
+      {q:"উদাহরণসহ মাছের বিভিন্ন প্রকার যৌন দ্বিরূপতার বর্ণনা দাও।",hot:true},
+      {q:"মাছের স্কুলিং কী? মাছের বিভিন্ন ধরনের অভিপ্রয়াণের বর্ণনা দাও।",hot:false},
+      {q:"মাছের বিভিন্ন প্রকার অপত্য লালনের বর্ণনা দাও।",hot:false}
+    ]},
+  {id:"F4",emoji:"🐡",title:"অধ্যায় ৬: আঁইশ, পটকা ও পার্শ্বরেখা",
+    ka:[
+      {q:"পার্শ্বরেখা অঙ্গ কী কাজ করে?",hot:true},
+      {q:"মাছের পটকার প্রধান কাজ কী?",hot:true},
+      {q:"প্লাকয়েড আঁইশ কোন ধরনের মাছে পাওয়া যায়?",hot:true},
+      {q:"সাইক্লয়েড ও টেনয়েড আঁইশের পার্থক্য কী?",hot:true},
+      {q:"আঁইশের সাহায্যে মাছের বয়স কীভাবে নির্ণয় করা হয়?",hot:true},
+      {q:"Neuromast কী?",hot:false}
+    ],
+    kha:[
+      {q:"মাছের পার্শ্বরেখা অঙ্গের গঠন ও কাজ বর্ণনা কর।",hot:true},
+      {q:"আঁইশের ব্যবহার ও কাজ উল্লেখ কর।",hot:false},
+      {q:"মাছের পটকার গঠন ও কাজ বর্ণনা কর।",hot:true},
+      {q:"প্লাকয়েড ও সাইক্লয়েড আঁইশের মধ্যে পার্থক্য লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"আঁইশ কী? মাছের বিভিন্ন ধরনের আঁইশের বিবরণ দাও।",hot:true}
+    ]},
+  {id:"F5",emoji:"🥚",title:"অধ্যায় ৭: প্রজনন ও পরিস্ফুটন",
+    ka:[
+      {q:"প্রজননক্ষম রুই মাছের পুরুষ ও স্ত্রীর একটি পার্থক্য।",hot:false},
+      {q:"মাছের বৃদ্ধি ও পরিস্ফুটনের পার্থক্য কী?",hot:true},
+      {q:"ইলিশ মাছ কোথায় ডিম দেয়?",hot:true},
+      {q:"ভ্রূণীয় পরিস্ফুটনের প্রথম ধাপ কী?",hot:true},
+      {q:"পরিপক্বতার দশা বলতে কী বোঝো?",hot:true}
+    ],
+    kha:[
+      {q:"প্রজননক্ষম পুরুষ ও স্ত্রী Labeo-র মধ্যে পার্থক্য লিখ।",hot:false},
+      {q:"মাছের বৃদ্ধি ও পরিস্ফুটনের মধ্যে পার্থক্য লিখ।",hot:true}
+    ],
+    ga:[
+      {q:"ইলিশ মাছের ভ্রূণীয় পরিস্ফুটন বর্ণনা কর।",hot:true},
+      {q:"পুরুষ ও স্ত্রী মাছে পরিপক্বতার দশাসমূহের বর্ণনা দাও।",hot:false}
+    ]},
+  {id:"F6",emoji:"🌊",title:"অধ্যায় ৮: লিমনোলজি, প্লাঙ্কটন ও ইউট্রোফিকেশন",
+    ka:[
+      {q:"প্লাঙ্কটন কী?",hot:true},
+      {q:"ফাইটোপ্লাঙ্কটন ও জুপ্লাঙ্কটনের পার্থক্য কী?",hot:true},
+      {q:"ইউট্রোফিকেশন কী?",hot:true},
+      {q:"লিমনোলজি কী?",hot:true},
+      {q:"অভ্যন্তরীণ জলাশয় কত প্রকার?",hot:true},
+      {q:"গভীর সমুদ্রের একটি অভিযোজনিক বৈশিষ্ট্য লেখো।",hot:false}
+    ],
+    kha:[
+      {q:"প্লাঙ্কটনের শ্রেণিবিন্যাস কর।",hot:false},
+      {q:"মাছের উৎপাদন বৃদ্ধিতে প্লাঙ্কটনের ভূমিকা বর্ণনা কর।",hot:true},
+      {q:"অ্যাকুয়াকালচারে লিমনোলজির গুরুত্ব আলোচনা কর।",hot:false},
+      {q:"অভ্যন্তরীণ জলাশয়ের শ্রেণিবিন্যাস কর।",hot:true}
+    ],
+    ga:[
+      {q:"ইউট্রিফেকেশন কী? ইউট্রিফিকেশনের কারণ, ফলাফল এবং বিভিন্ন ধরনের নিয়ন্ত্রণ পদ্ধতি আলোচনা কর।",hot:true},
+      {q:"গভীর সমুদ্রে বসবাসকারী প্রাণীদের অভিযোজনিক বৈশিষ্ট্য বর্ণনা কর।",hot:false}
+    ]}
+],
+
+/* ── WLB — Wildlife Biology ── */
+WLB:[
+  {id:"W1",emoji:"🌿",title:"অধ্যায় ১–২: বন্যপ্রাণী ও বাংলাদেশের বন্যপ্রাণী",
+    ka:[
+      {q:"বন্যপ্রাণী কাকে বলে?",hot:true},
+      {q:"বন্যপ্রাণীর দুটি অর্থনৈতিক গুরুত্ব লেখো।",hot:true},
+      {q:"উন্নয়ন কার্যক্রম বন্যপ্রাণীর উপর কী প্রভাব ফেলে?",hot:true},
+      {q:"উড়ুক্কু ও অউড়ুক্কু পাখির একটি পার্থক্য লেখো।",hot:true},
+      {q:"পরিযায়ী পাখি কাকে বলে?",hot:true},
+      {q:"উভচর প্রাণীর অপত্য লালন বলতে কী বোঝো?",hot:true},
+      {q:"বাংলাদেশের একটি জলজ স্তন্যপায়ীর নাম লেখো।",hot:true},
+      {q:"কৃষিক্ষেত্রে উভচরের একটি ভূমিকা লেখো।",hot:false}
+    ],
+    kha:[
+      {q:"বাংলাদেশের কোন কোন শ্রেণির প্রাণীদেরকে বন্যপ্রাণী বলা হয়?",hot:false},
+      {q:"বন্যপ্রাণীর গুরুত্ব আলোচনা কর।",hot:true},
+      {q:"স্তন্যপায়ীদের খাদ্য ও খাদ্যাভ্যাস বর্ণনা কর।",hot:false},
+      {q:"উভচরের অভিযোজনিক বিচ্ছুরণ বর্ণনা কর।",hot:false},
+      {q:"কৃষিক্ষেত্রে উভচরের ভূমিকা লিখ।",hot:false},
+      {q:"উড্ডয়ন ক্ষমতাযুক্ত ও উড্ডয়ন ক্ষমতাহীন পাখির মধ্যে তুলনা কর।",hot:true}
+    ],
+    ga:[
+      {q:"উন্নয়ন কার্যক্রম কীভাবে বন্যপ্রাণীর ওপর প্রভাব বিস্তার করে বর্ণনা কর।",hot:true},
+      {q:"পরিবেশের ভারসাম্য রক্ষায় বন্যপ্রাণীর ভূমিকা বর্ণনা কর।",hot:false},
+      {q:"বাংলাদেশে বন্যপ্রাণী বিলুপ্তির কারণসমূহ আলোচনা কর।",hot:true},
+      {q:"বাংলাদেশের সরীসৃপ প্রাণীদের অতীত ও বর্তমান অবস্থা এবং বিস্তৃতি বর্ণনা কর।",hot:true},
+      {q:"বাংলাদেশে পরিবেশের ভারসাম্য রক্ষায় উভচরদের ভূমিকা আলোচনা কর।",hot:false},
+      {q:"বাংলাদেশের পাখিদের অতীত ও বর্তমান অবস্থা এবং বিস্তৃতি বর্ণনা কর।",hot:true},
+      {q:"পরিবেশের ভারসাম্য রক্ষায় পাখিদের ভূমিকা বর্ণনা কর।",hot:false},
+      {q:"বাংলাদেশের স্তন্যপায়ী বা জলজ স্তন্যপায়ী প্রাণীদের অতীত ও বর্তমান অবস্থা এবং বিস্তৃতি বর্ণনা কর।",hot:true},
+      {q:"বাংলাদেশের পরিবেশের ভারসাম্য রক্ষায় সরীসৃপের ভূমিকা আলোচনা কর।",hot:false},
+      {q:"উভচর প্রাণীর অপত্য লালন বর্ণনা কর।",hot:true}
+    ]},
+  {id:"W2",emoji:"🐢",title:"অধ্যায় ৩: বিপন্ন ও বিলুপ্ত প্রজাতি",
+    ka:[
+      {q:"IUCN-এর পূর্ণরূপ কী?",hot:true},
+      {q:"রেড লিস্ট কী?",hot:true},
+      {q:"ডোডো পাখি কেন বিলুপ্ত হয়েছে?",hot:true},
+      {q:"ডাইনোসর কোন যুগে বিলুপ্ত হয়?",hot:true},
+      {q:"Archaeopteryx কী?",hot:true},
+      {q:"বোস্তামী কাছিমের একটি বৈশিষ্ট্য।",hot:true},
+      {q:"কচ্ছপ ও কাছিম বিনাশের একটি কারণ লেখো।",hot:true}
+    ],
+    kha:[
+      {q:"বাংলাদেশের চারটি শঙ্কাগ্রস্ত পাখির বৈজ্ঞানিক নাম লিখ।",hot:false},
+      {q:"ডাইনোসর সম্পর্কে টিকা বা এর বিলুপ্তির কারণসমূহ উল্লেখ কর।",hot:true},
+      {q:"সুন্দরবনের চারটি শঙ্কাগ্রস্ত প্রাণীর বৈজ্ঞানিক নাম লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"বাংলাদেশের কচ্ছপ ও কাছিম ধ্বংসের কারণ, সংরক্ষণ ও অর্থনৈতিক গুরুত্ব আলোচনা কর।",hot:true}
+    ]},
+  {id:"W3",emoji:"🛡️",title:"অধ্যায় ৪–৫: সংরক্ষণ ও অভয়ারণ্য",
+    ka:[
+      {q:"In-situ সংরক্ষণ কী?",hot:true},
+      {q:"Ex-situ সংরক্ষণ কী?",hot:true},
+      {q:"CITES-এর পূর্ণরূপ লেখো।",hot:true},
+      {q:"বন্যপ্রাণী ব্যবস্থাপনা ও সংরক্ষণের একটি পার্থক্য।",hot:true},
+      {q:"ডলফিন অভয়ারণ্য কোথায় অবস্থিত?",hot:true},
+      {q:"সাফারি পার্কের উদ্দেশ্য কী?",hot:true},
+      {q:"রামসার কনভেনশন কী?",hot:true}
+    ],
+    kha:[
+      {q:"ইন-সিটু সংরক্ষণের গুরুত্ব ও সুবিধা উল্লেখ কর।",hot:false},
+      {q:"বন্যপ্রাণী সংরক্ষণে সাংস্কৃতিক ও ধর্মীয় মূল্যবোধের ভূমিকা আলোচনা কর।",hot:false},
+      {q:"বন্যপ্রাণী ব্যবস্থাপনা ও বন্যপ্রাণী সংরক্ষণের মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"ইকো ও সাফারি পার্কের উদ্দেশ্যসমূহ বর্ণনা কর।",hot:true},
+      {q:"বাংলাদেশের যেকোনো চারটি অভয়ারণ্যের সংক্ষিপ্ত বিবরণ দাও।",hot:false},
+      {q:"বাংলাদেশের চারটি জাতীয় উদ্যানের নাম ও অবস্থান লিখ।",hot:false}
+    ],
+    ga:[
+      {q:"বন্যপ্রাণী সংরক্ষণে ইন-সিটু ও এক্স-সিটু সংরক্ষণ পদ্ধতি বর্ণনা কর।",hot:false},
+      {q:"বন্যপ্রাণী সংরক্ষণে প্রতিবেশী রাষ্ট্রসমূহের কার্যাবলি সম্পর্কে আলোচনা কর।",hot:false},
+      {q:"বন্যপ্রাণী সংরক্ষণে বিভিন্ন আন্তর্জাতিক সংস্থার ভূমিকা আলোচনা কর।",hot:true},
+      {q:"বন্যপ্রাণী সংরক্ষণে জাতীয় উদ্যান, বিনোদন পার্ক, সংরক্ষিত এলাকা, গেম রিজার্ভ ও অভয়ারণ্যের ভূমিকা আলোচনা কর।",hot:false}
+    ]},
+  {id:"W4",emoji:"🦁",title:"অধ্যায় ৬–৭: চিড়িয়াখানা ও বন্যপ্রাণী ফার্মিং",
+    ka:[
+      {q:"সাফারি পার্ক ও চিড়িয়াখানার একটি পার্থক্য লেখো।",hot:true},
+      {q:"ডুলহাজরা সাফারি পার্ক কোথায়?",hot:true},
+      {q:"বন্যপ্রাণী সংরক্ষণে চিড়িয়াখানার একটি ভূমিকা লেখো।",hot:true},
+      {q:"বন্যপ্রাণী ফার্মিং কী?",hot:true},
+      {q:"বাংলাদেশে কুমির চাষ কোথায় হয়?",hot:true},
+      {q:"ইকো-ট্যুরিজম কী?",hot:true}
+    ],
+    kha:[
+      {q:"সাফারি পার্ক ও চিড়িয়াখানার মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"সাফারি পার্ক পরিদর্শনের সময় পর্যটকদের অনুসরণীয় বিষয়াবলি বর্ণনা কর।",hot:false},
+      {q:"বন্যপ্রাণী সংরক্ষণে চিড়িয়াখানার গুরুত্ব লিখ।",hot:true},
+      {q:"বন্যপ্রাণী ফার্মিং এর অর্থনৈতিক গুরুত্ব লিখ।",hot:true},
+      {q:"বাংলাদেশে বন্যপ্রাণীর ব্যবসা বর্ণনা কর।",hot:false}
+    ],
+    ga:[
+      {q:"বাংলাদেশে কুনোব্যাঙ চাষ বর্ণনা কর।",hot:false},
+      {q:"বাংলাদেশে কুমির চাষ পদ্ধতি, কুমির খামারের বর্তমান অবস্থা ও ভবিষ্যৎ সম্ভাবনা নিয়ে বিস্তারিত আলোচনা কর।",hot:true}
+    ]},
+  {id:"W5",emoji:"🐍",title:"অধ্যায় ৮–৯: সংঘাত, সাপ ও আইন",
+    ka:[
+      {q:"সাপের বিষের প্রধান উপাদান কী?",hot:true},
+      {q:"নিউরোটক্সিন ও হেমোটক্সিনের পার্থক্য কী?",hot:true},
+      {q:"বিষধর ও নির্বিষ সাপের একটি পার্থক্য লেখো।",hot:true},
+      {q:"মানুষ-বন্যপ্রাণী সংঘাত কী?",hot:true},
+      {q:"WWF কত সালে প্রতিষ্ঠিত হয়?",hot:true},
+      {q:"বার্ড ফ্লু কী?",hot:true}
+    ],
+    kha:[
+      {q:"সাপের বিষের উপাদান লিখ।",hot:false},
+      {q:"মানুষ ও বন্যপ্রাণীর মধ্যে সংঘাতের কারণসমূহ উল্লেখ কর।",hot:true},
+      {q:"বিভিন্ন প্রকার সাপের বিষের নাম ও কার্যকারিতা লিখ।",hot:false},
+      {q:"বিষধর ও নির্বিষ সাপের মধ্যে পার্থক্য লিখ।",hot:true},
+      {q:"বিশ্ব বন্যপ্রাণী তহবিল গঠনের উদ্দেশ্য কী?",hot:true}
+    ],
+    ga:[
+      {q:"বাঘ কর্তৃক গবাদি পশু ও মানুষের মৃত্যুর কারণ ব্যাখ্যা কর।",hot:false},
+      {q:"বাংলাদেশ বন্যপ্রাণী সংরক্ষণ (সংশোধিত) আদেশ, ১৯৭৪ এর বিশেষ বিশেষ দিকগুলো বর্ণনা কর।",hot:true}
+    ]}
+]
+
+};
+
+</script>
+<script>
+/* ══════════════════════════════════════════════
+   Zoology Hub — অ্যাপ লজিক (সম্পূর্ণ প্লেইন JavaScript)
+   React-এর সব ফিচার এখানে Vanilla JS-এ করা হয়েছে।
+   ডেটা: src/data.js  ·  স্টাইল: src/styles.css
+══════════════════════════════════════════════ */
+(function () {
+  "use strict";
+
+  /* ────────────────────────── helpers ────────────────────────── */
+  const $ = (sel, root) => (root || document).querySelector(sel);
+  const app = $("#app");
+
+  /* ── সহজে বদলানোর জন্য কনফিগ (এখানে এডিট করলেই পুরো অ্যাপে বদলে যাবে) ── */
+  const CONFIG = {
+    hotLabel: "🔥 ১০০%",                                  /* প্রশ্নের পাশে ব্যাজ */
+    hotCopyTag: " [🔥১০০%]",                              /* কপি টেক্সটে ট্যাগ */
+    hotStatLabel: "🔥 গুরুত্বপূর্ণ",                        /* স্ট্যাট লেবেল */
+    examLine: "NATIONAL UNIVERSITY · 4TH YEAR · 2025 EXAM · 2021-22",
+    collegeBn: "নোয়াখালী সরকারি কলেজ",
+    deptBn: "প্রাণিবিদ্যা বিভাগ",
+    author: "প্রিয়াস চন্দ্র দাস",
+    copyright: "Copyright © 2026 Prieas Chandra Das · Noakhali Government College"
+  };
+
+  const BG_ICONS = ["🧬","🔬","🐟","🦐","🐝","🦋","🐄","🌿","🦠","⚗️","🐡","🌊","🐍","🦅","🐊","🌾","🦀","🐚","🐬","🧪","🦁","🦎","🐢","🎣","🦜","🐸","🌺","🦩"];
+
+  const BN_DIGITS = "০১২৩৪৫৬৭৮৯";
+  const bn = (n) => String(n).replace(/\d/g, (d) => BN_DIGITS[+d]);
+
+  /** HTML-escape */
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
+    );
+  }
+
+  /** বাংলা-বান্ধব সার্চ কী — কেস + যুক্তাক্ষর/কার-চিহ্ন সহজ করে */
+  function norm(s) {
+    return String(s == null ? "" : s)
+      .toLowerCase()
+      .normalize("NFC")
+      .replace(/[\u200c\u200d]/g, "")          /* ZWJ / ZWNJ বাদ */
+      .replace(/[\u09bc\u0981\u0982\u0983\u09cd]/g, ""); /* ় ঁ ং ঃ ্ বাদ */
+  }
+
+  const matches = (text, q) => norm(text).includes(norm(q));
+
+  /** সার্চ টার্ম হাইলাইট (নিরাপদভাবে escape করে) */
+  function highlight(text, q) {
+    if (!q) return esc(text);
+    const i = String(text).toLowerCase().indexOf(String(q).toLowerCase());
+    if (i === -1) return esc(text);
+    const t = String(text);
+    return esc(t.slice(0, i)) + "<mark>" + esc(t.slice(i, i + q.length)) + "</mark>" + esc(t.slice(i + q.length));
+  }
+
+  /** deterministic random — প্রতিবার একই ব্যাকগ্রাউন্ড */
+  function mulberry32(a) {
+    return function () {
+      a |= 0; a = (a + 0x6D2B79F5) | 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  /* ────────────────────────── app state ────────────────────────── */
+  const state = {
+    view: "home",
+    subj: null,
+    div: "ka",
+    search: "",
+    open: new Set()
+  };
+
+  /* ────────────────────────── background ────────────────────────── */
+  function floatingBg() {
+    const rnd = mulberry32(20261025);
+    let out = '<div class="bg-wrap" aria-hidden="true">';
+    for (let i = 0; i < 30; i++) {
+      const icon = BG_ICONS[i % BG_ICONS.length];
+      const x = (rnd() * 100).toFixed(2);
+      const y = (rnd() * 100).toFixed(2);
+      const sz = 10 + rnd() * 15;
+      const dur = 14 + rnd() * 22;
+      const delay = rnd() * 16;
+      const dx = ((rnd() - 0.5) * 75).toFixed(1);
+      const dy = ((rnd() - 0.5) * 75).toFixed(1);
+      const rot = ((rnd() - 0.5) * 30).toFixed(1);
+      out += `<span class="bg-icon" style="left:${x}%;top:${y}%;font-size:${sz.toFixed(1)}px;` +
+        `--dur:${dur.toFixed(1)}s;--delay:${delay.toFixed(1)}s;--dx:${dx}px;--dy:${dy}px;--rot:${rot}deg">${icon}</span>`;
+    }
+    return out + "</div>";
+  }
+
+  /* ────────────────────────── totals ────────────────────────── */
+  function subjectQuestionCount(subj) {
+    return (DATA[subj.id] || []).reduce(
+      (a, ch) => a + (ch.ka || []).length + (ch.kha || []).length + (ch.ga || []).length, 0
+    );
+  }
+  const TOTAL_SUBJECTS = SUBJECTS.length;
+  const TOTAL_CHAPTERS = SUBJECTS.reduce((a, s) => a + (DATA[s.id] || []).length, 0);
+  const TOTAL_QUESTIONS = SUBJECTS.reduce((a, s) => a + subjectQuestionCount(s), 0);
+
+  /* ══════════════════════════ HOME ══════════════════════════ */
+  function renderHome() {
+    state.view = "home";
+    state.subj = null;
+    state.search = "";
+    document.title = "Zoology Hub — প্রাণিবিদ্যা প্রশ্নব্যাংক";
+
+    app.innerHTML = `
+      <div class="page page-home">
+        ${floatingBg()}
+        <header class="hero">
+          <div class="eyebrow">${esc(CONFIG.examLine)}</div>
+          <div class="hero-emoji">🔬</div>
+          <h1>Zoology Hub</h1>
+          <div class="bn">প্রাণিবিদ্যা প্রশ্নব্যাংক</div>
+          <div class="sm">Honours 4th Year · সমস্ত বিষয় একসাথে</div>
+          <div class="hero-badges">
+            <div class="badge glass">
+              <span style="font-size:15px">🎓</span>
+              <span>
+                <span class="t1">${esc(CONFIG.collegeBn)}</span><br>
+                <span class="t2">${esc(CONFIG.deptBn)}</span>
+              </span>
+            </div>
+            <div class="badge gold">🔥 ৮টি বিষয় · সব একসাথে · PDF অনুযায়ী</div>
+          </div>
+        </header>
+
+        <div class="wrap wrap-home">
+          <div class="searchbar glass">
+            <span class="ico">🔍</span>
+            <input id="homeSearch" type="text" autocomplete="off" aria-label="বিষয় খুঁজুন"
+                   placeholder="বিষয় খুঁজুন... (নাম, কোড, বাংলা)" value="">
+            <button class="clearbtn" data-act="clear-home" hidden aria-label="মুছুন">✕</button>
+          </div>
+
+          <div class="mega-stats" id="megaStats">
+            ${megaStatsHtml()}
+          </div>
+
+          <div class="grid" id="subjGrid">${subjectCardsHtml("")}</div>
+          <div class="empty" id="homeEmpty" hidden>🔍 কোনো বিষয় পাওয়া যায়নি</div>
+        </div>
+
+        ${homeFooter()}
+      </div>`;
+  }
+
+  function megaStatsHtml() {
+    return [
+      { l: "মোট বিষয়", v: TOTAL_SUBJECTS },
+      { l: "মোট অধ্যায়", v: TOTAL_CHAPTERS },
+      { l: "মোট প্রশ্ন", v: bn(TOTAL_QUESTIONS) + "+" }
+    ].map((s) => `
+      <div class="mega glass">
+        <div class="v">${typeof s.v === "number" ? bn(s.v) : esc(s.v)}</div>
+        <div class="l">${s.l}</div>
+      </div>`).join("");
+  }
+
+  function subjectCardsHtml(q) {
+    const list = SUBJECTS.filter(
+      (s) => matches(s.name, q) || matches(s.bn, q) || matches(s.code, q) || matches(s.id, q)
+    );
+    return list.map((s) => {
+      const chap = (DATA[s.id] || []).length;
+      const qc = subjectQuestionCount(s);
+      return `
+        <span class="subj glass" role="button" tabindex="0" data-act="open-subject" data-id="${s.id}"
+              style="--accent:${s.accent};--grad:${s.grad}">
+          <span class="subj-top">
+            <span class="subj-ico">${s.emoji}</span>
+            <span style="flex:1;min-width:0">
+              <span class="subj-name">${esc(s.name)}</span>
+              <span class="subj-bn">${esc(s.bn)}</span>
+            </span>
+          </span>
+          <span class="subj-bot">
+            <span class="subj-tags">
+              <span class="tag-code">${esc(s.code)}</span>
+              <span class="tag-info">${bn(chap)} অধ্যায় · ${bn(qc)}+ প্রশ্ন</span>
+            </span>
+            <span class="subj-arrow">→</span>
+          </span>
+        </span>`;
+    }).join("");
+  }
+
+  function homeFooter() {
+    return `
+      <footer class="foot">
+        <div class="foot-inner glass">
+          <div class="foot-icons">
+            ${["🧬","🔬","🐟","🦋","🐝","🦠","🦁","🐊"].map((ic) => `<span>${ic}</span>`).join("")}
+          </div>
+          <div class="foot-sub">Zoology Hub · National University · 4th Year · 2025 Exam</div>
+          <div class="foot-line"></div>
+          <div class="foot-name">অলংকরণ ও নির্মাণ: ${esc(CONFIG.author)}</div>
+          <div class="foot-cc">${esc(CONFIG.copyright)}</div>
+        </div>
+      </footer>`;
+  }
+
+  function refreshHome(q) {
+    state.search = q;
+    const grid = $("#subjGrid");
+    const empty = $("#homeEmpty");
+    const clear = $('[data-act="clear-home"]');
+    const html = subjectCardsHtml(q);
+    if (grid) grid.innerHTML = html;
+    if (empty) empty.hidden = !!html;
+    if (clear) clear.hidden = !q;
+  }
+
+  /* ══════════════════════════ SUBJECT ══════════════════════════ */
+  function renderSubject(subj, divKey, keepSearch) {
+    state.view = "subject";
+    state.subj = subj;
+    state.div = divKey || "ka";
+    if (!keepSearch) state.search = "";
+    state.open = new Set();
+    // প্রথম অধ্যায় (যেটিতে প্রশ্ন আছে) ডিফল্ট খোলা
+    const first = (DATA[subj.id] || []).find((ch) => (ch[state.div] || []).length);
+    if (first) state.open.add(first.id);
+
+    document.title = `${subj.name} — Zoology Hub`;
+    applySubjectTheme(subj);
+
+    app.innerHTML = `
+      <div class="page" style="background:${subj.bg}">
+        ${floatingBg()}
+        <header class="subhead" style="background:linear-gradient(155deg,rgba(0,0,0,.93) 0%,${subj.accent}cc 100%)">
+          <button class="backbtn glass" data-act="back">← ফিরে</button>
+          <div class="eyebrow">${esc(CONFIG.examLine)}</div>
+          <div style="font-size:26px;margin-bottom:4px">${subj.emoji}</div>
+          <h2 class="sub-name">${esc(subj.name)}</h2>
+          <div class="sub-bn">${esc(subj.bn)} · কোড: ${esc(subj.code)}</div>
+          <div class="pill glass">🎓 ${esc(CONFIG.collegeBn)} · ${esc(CONFIG.deptBn)}</div>
+        </header>
+
+        <div class="wrap">
+          <div class="searchbar glass" style="--go:.86">
+            <span class="ico">🔍</span>
+            <input id="subjSearch" type="text" autocomplete="off" aria-label="প্রশ্ন সার্চ"
+                   placeholder="যেকোনো প্রশ্ন সার্চ করো..." value="${esc(state.search)}">
+            <button class="clearbtn" data-act="clear-subj" ${state.search ? "" : "hidden"} aria-label="মুছুন">✕</button>
+          </div>
+          <div class="searchinfo" id="searchInfo"></div>
+
+          <div class="tabs glass" id="tabs">
+            ${DIVS.map((d) => `
+              <button class="tab${state.div === d.key ? " on" : ""}" data-div="${d.key}">
+                <span class="l">${d.label}</span>
+                <span class="s">${d.sub}</span>
+              </button>`).join("")}
+          </div>
+
+          <div class="stats" id="statsWrap">${subjectStatsHtml(subj)}</div>
+
+          <div class="list-head">
+            <span class="list-title">অধ্যায়সমূহ</span>
+            <button class="linkbtn" data-act="toggle-all">সব খুলুন</button>
+          </div>
+          <div id="chapterList">${chaptersHtml(subj)}</div>
+        </div>
+
+        <footer class="foot">
+          <div class="foot-inner glass">
+            <div class="foot-sub">${esc(subj.name)} · ${esc(subj.code)}</div>
+            <div class="foot-line"></div>
+            <div class="foot-name">অলংকরণ ও নির্মাণ: ${esc(CONFIG.author)}</div>
+            <div class="foot-cc">${esc(CONFIG.copyright)}</div>
+          </div>
+        </footer>
+      </div>`;
+
+    // subject accent গুলো ভিতরের tab / card hover-এ ব্যবহারের জন্য
+    document.documentElement.style.setProperty("--accent", subj.accent);
+    document.documentElement.style.setProperty("--mid", subj.mid);
+    document.documentElement.style.setProperty("--grad", subj.grad);
+
+    updateSubjectInfo();
+  }
+
+  function applySubjectTheme(subj) {
+    document.documentElement.style.setProperty("--accent", subj.accent);
+    document.documentElement.style.setProperty("--mid", subj.mid);
+    document.documentElement.style.setProperty("--grad", subj.grad);
+  }
+
+  function divQuestions(subj, divKey) {
+    return (DATA[subj.id] || []).flatMap((ch) => ch[divKey] || []);
+  }
+
+  function visibleCount(subj, divKey, q) {
+    if (!q) return divQuestions(subj, divKey).length;
+    return (DATA[subj.id] || []).reduce((a, ch) => {
+      const qs = ch[divKey] || [];
+      if (matches(ch.title, q)) return a + qs.length;
+      return a + qs.filter((it) => matches(it.q, q)).length;
+    }, 0);
+  }
+
+  function subjectStatsHtml(subj) {
+    const q = state.search.trim();
+    const all = divQuestions(subj, state.div);
+    const hot = all.filter((x) => x.hot).length;
+    const total = q ? visibleCount(subj, state.div, q) : all.length;
+    return `
+      <div class="stat glass">
+        <div class="v">${bn(total)}</div>
+        <div class="l">মোট প্রশ্ন</div>
+      </div>
+      <div class="stat glass">
+        <div class="v red">${bn(hot)}</div>
+        <div class="l">${esc(CONFIG.hotStatLabel)}</div>
+      </div>
+      <button class="copybtn" data-act="copy">📋 কপি করো</button>`;
+  }
+
+  function chaptersHtml(subj) {
+    const q = state.search.trim();
+    const chapters = DATA[subj.id] || [];
+    let out = "";
+    let shown = 0;
+    chapters.forEach((ch) => {
+      const html = cardHtml(ch, subj, state.div, q);
+      if (html) { out += html; shown++; }
+    });
+    if (!shown) {
+      out = `<div class="empty">🔍 এই বিভাগে কোনো প্রশ্ন পাওয়া যায়নি</div>`;
+    }
+    return out;
+  }
+
+  function cardHtml(ch, subj, divKey, q) {
+    const qs = ch[divKey] || [];
+    if (!qs.length) return "";
+    const titleHit = q ? matches(ch.title, q) : false;
+    const vis = !q ? qs : titleHit ? qs : qs.filter((it) => matches(it.q, q));
+    if (q && !vis.length) return "";
+
+    const hot = vis.filter((i) => i.hot).length;
+    const isOpen = q ? true : state.open.has(ch.id);
+
+    const rows = vis.map((it, i) => `
+      <div class="qrow${it.hot ? " hot" : ""}">
+        <div class="qnum">${String(i + 1).padStart(2, "0")}</div>
+        <div class="qtext">${highlight(it.q, q)}${it.hot ? `<span class="hotpill">${esc(CONFIG.hotLabel)}</span>` : ""}</div>
+      </div>`).join("");
+
+    return `
+      <div class="card glass${isOpen ? " open" : ""}" data-card="${ch.id}">
+        <button class="card-head" data-act="toggle" data-id="${ch.id}" aria-expanded="${isOpen}">
+          <span class="card-emoji">${ch.emoji}</span>
+          <span class="card-mid">
+            <span class="card-id">${esc(ch.id)}</span>
+            <span class="card-title">${esc(ch.title)}</span>
+          </span>
+          <span class="card-badges">
+            ${hot > 0 ? `<span class="badge-hot">🔥${bn(hot)}</span>` : ""}
+            <span class="badge-count">${bn(vis.length)}টি</span>
+            <span class="chev">▾</span>
+          </span>
+        </button>
+        <div class="card-body"${isOpen ? "" : " hidden"}>${rows}</div>
+      </div>`;
+  }
+
+  function updateSubjectInfo() {
+    const subj = state.subj;
+    if (!subj) return;
+    const q = state.search.trim();
+    const info = $("#searchInfo");
+    if (info) {
+      info.innerHTML = q
+        ? `<strong>${bn(visibleCount(subj, state.div, q))}টি</strong> প্রশ্ন পাওয়া গেছে`
+        : "";
+    }
+    const sw = $("#statsWrap");
+    if (sw) sw.innerHTML = subjectStatsHtml(subj);
+    const cl = $("#chapterList");
+    if (cl) cl.innerHTML = chaptersHtml(subj);
+    document.querySelectorAll(".tab").forEach((t) => {
+      t.classList.toggle("on", t.dataset.div === state.div);
+    });
+    updateToggleAllLabel();
+  }
+
+  function updateToggleAllLabel() {
+    const btn = $('[data-act="toggle-all"]');
+    if (!btn) return;
+    const q = state.search.trim();
+    const ids = (DATA[state.subj.id] || [])
+      .filter((ch) => (ch[state.div] || []).length)
+      .map((ch) => ch.id);
+    const allOpen = ids.length > 0 && ids.every((id) => state.open.has(id));
+    btn.textContent = q ? "সার্চ রেজাল্ট" : allOpen ? "সব বন্ধ করো" : "সব খুলুন";
+    btn.disabled = !!q;
+  }
+
+  /* ────────────────────────── copy ────────────────────────── */
+  function buildCopyText(subj, divKey) {
+    const div = DIVS.find((d) => d.key === divKey);
+    let t = `${subj.name} (${subj.code}) — ${div.label}\n` +
+      `National University · 4th Year · 2025 Exam · 2021-22\n` +
+      `${CONFIG.collegeBn} · ${CONFIG.deptBn}\n` +
+      "═".repeat(46) + "\n\n";
+
+    (DATA[subj.id] || []).forEach((ch) => {
+      const qs = ch[divKey] || [];
+      if (!qs.length) return;
+      t += `${ch.emoji} ${ch.title}\n${"─".repeat(36)}\n`;
+      qs.forEach((it, i) => {
+        t += `${i + 1}. ${it.q}${it.hot ? CONFIG.hotCopyTag : ""}\n`;
+      });
+      t += "\n";
+    });
+    return t;
+  }
+
+  async function copyText(text) {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        toast("✅ কপি হয়েছে!");
+        return;
+      }
+      throw new Error("clipboard unavailable");
+    } catch (e) {
+      // fallback: লুকানো textarea
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.cssText = "position:fixed;left:-9999px;top:0";
+      document.body.appendChild(ta);
+      ta.select();
+      let ok = false;
+      try { ok = document.execCommand("copy"); } catch (_) { ok = false; }
+      document.body.removeChild(ta);
+      if (ok) toast("✅ কপি হয়েছে!");
+      else showCopyModal(text);
+    }
+  }
+
+  /* ────────────────────────── toast ────────────────────────── */
+  let toastEl = null, toastTimer = null;
+  function toast(msg) {
+    if (!toastEl) {
+      toastEl = document.createElement("div");
+      toastEl.className = "toast";
+      toastEl.setAttribute("role", "status");
+      toastEl.setAttribute("aria-live", "polite");
+      document.body.appendChild(toastEl);
+    }
+    toastEl.textContent = msg;
+    toastEl.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toastEl.classList.remove("show"), 2200);
+  }
+
+  /* ────────────────────────── copy modal ────────────────────────── */
+  let modalEl = null;
+  function showCopyModal(text) {
+    if (!modalEl) {
+      modalEl = document.createElement("div");
+      modalEl.className = "modal";
+      modalEl.hidden = true;
+      modalEl.innerHTML = `
+        <div class="modal-box" role="dialog" aria-modal="true" aria-label="কপি">
+          <h3>📋 কপি করো</h3>
+          <p>নিচের লেখাটুকু সিলেক্ট করে Ctrl/Cmd + C দিয়ে কপি করো।</p>
+          <textarea readonly></textarea>
+          <div class="modal-actions">
+            <button class="btn" data-act="modal-close">বন্ধ করো</button>
+            <button class="btn primary" data-act="modal-select">সব সিলেক্ট</button>
+          </div>
+        </div>`;
+      document.body.appendChild(modalEl);
+      modalEl.addEventListener("click", (e) => {
+        if (e.target === modalEl) closeModal();
+        const act = e.target.closest("[data-act]");
+        if (!act) return;
+        if (act.dataset.act === "modal-close") closeModal();
+        if (act.dataset.act === "modal-select") {
+          const ta = $("textarea", modalEl);
+          ta.focus(); ta.select();
+        }
+      });
+    }
+    $("textarea", modalEl).value = text;
+    modalEl.hidden = false;
+    setTimeout(() => $("textarea", modalEl).focus(), 30);
+  }
+  function closeModal() { if (modalEl) modalEl.hidden = true; }
+
+  /* ────────────────────────── routing ────────────────────────── */
+  function route() {
+    const h = location.hash || "#/home";
+    const m = h.match(/^#\/s\/([A-Za-z]+)(?:\/(ka|kha|ga))?/);
+    if (m) {
+      const subj = SUBJECTS.find((s) => s.id === m[1]);
+      if (subj) {
+        const keep = state.subj && state.subj.id === subj.id;
+        renderSubject(subj, m[2] || "ka", keep);
+        window.scrollTo(0, 0);
+        return;
+      }
+    }
+    renderHome();
+    window.scrollTo(0, 0);
+  }
+
+  function openSubject(id) {
+    location.hash = `#/s/${id}/ka`;
+  }
+
+  function goHome() {
+    history.replaceState(null, "", "#/home");
+    renderHome();
+    window.scrollTo(0, 0);
+  }
+
+  function setDiv(key) {
+    if (!state.subj || state.div === key) return;
+    state.div = key;
+    state.search = "";
+    const inp = $("#subjSearch");
+    if (inp) inp.value = "";
+    const clearBtn = $('[data-act="clear-subj"]');
+    if (clearBtn) clearBtn.hidden = true;
+    // প্রথম অধ্যায় খুলে দিই
+    state.open = new Set();
+    const first = (DATA[state.subj.id] || []).find((ch) => (ch[key] || []).length);
+    if (first) state.open.add(first.id);
+    history.replaceState(null, "", `#/s/${state.subj.id}/${key}`);
+    updateSubjectInfo();
+  }
+
+  /* ────────────────────────── events ────────────────────────── */
+  app.addEventListener("click", (e) => {
+    /* home: বিষয় কার্ড (button বা role=button) */
+    const subjCard = e.target.closest('[data-act="open-subject"]');
+    if (subjCard) { openSubject(subjCard.dataset.id); return; }
+
+    const el = e.target.closest("[data-act]");
+    if (!el) return;
+    const act = el.dataset.act;
+
+    if (act === "back") { goHome(); return; }
+
+    if (act === "clear-home") {
+      const inp = $("#homeSearch");
+      if (inp) { inp.value = ""; inp.focus(); }
+      refreshHome("");
+      return;
+    }
+
+    if (act === "clear-subj") {
+      const inp = $("#subjSearch");
+      if (inp) { inp.value = ""; inp.focus(); }
+      state.search = "";
+      const btn = $('[data-act="clear-subj"]');
+      if (btn) btn.hidden = true;
+      updateSubjectInfo();
+      return;
+    }
+
+    if (act === "toggle") {
+      if (state.search.trim()) return;         // সার্চের সময় সব খোলা
+      const id = el.dataset.id;
+      const card = el.closest(".card");
+      const willOpen = !state.open.has(id);
+      if (willOpen) state.open.add(id); else state.open.delete(id);
+      if (card) {
+        card.classList.toggle("open", willOpen);
+        const body = $(".card-body", card);
+        if (body) body.hidden = !willOpen;
+      }
+      el.setAttribute("aria-expanded", String(willOpen));
+      updateToggleAllLabel();
+      return;
+    }
+
+    if (act === "toggle-all") {
+      if (!state.subj || state.search.trim()) return;
+      const chapters = (DATA[state.subj.id] || []).filter((ch) => (ch[state.div] || []).length);
+      const allOpen = chapters.every((ch) => state.open.has(ch.id));
+      state.open = new Set(allOpen ? [] : chapters.map((ch) => ch.id));
+      const list = $("#chapterList");
+      if (list) list.innerHTML = chaptersHtml(state.subj);
+      updateToggleAllLabel();
+      return;
+    }
+
+    if (act === "copy") {
+      if (!state.subj) return;
+      copyText(buildCopyText(state.subj, state.div));
+      return;
+    }
+
+    if (act === "modal-close") closeModal();
+  });
+
+  /* tab ক্লিক (delegation) */
+  app.addEventListener("click", (e) => {
+    const tab = e.target.closest(".tab[data-div]");
+    if (!tab) return;
+    setDiv(tab.dataset.div);
+  });
+
+  /* keyboard: subject card-এ Enter/Space */
+  app.addEventListener("keydown", (e) => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+    const card = e.target.closest('[data-act="open-subject"]');
+    if (card) { e.preventDefault(); openSubject(card.dataset.id); }
+  });
+
+  /* সার্চ: ইনপুট ফোকাস নষ্ট না করে শুধু লিস্ট আপডেট */
+  app.addEventListener("input", (e) => {
+    const t = e.target;
+    if (t.id === "homeSearch") { refreshHome(t.value); return; }
+    if (t.id === "subjSearch") {
+      state.search = t.value;
+      const clearBtn = $('[data-act="clear-subj"]');
+      if (clearBtn) clearBtn.hidden = !t.value;
+      updateSubjectInfo();
+    }
+  });
+
+  /* Escape → মডাল বন্ধ / সার্চ রিসেট */
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      if (modalEl && !modalEl.hidden) { closeModal(); return; }
+    }
+  });
+
+  /* browser back/forward */
+  window.addEventListener("hashchange", route);
+
+  /* ────────────────────────── init ────────────────────────── */
+  if (!location.hash) history.replaceState(null, "", "#/home");
+  route();
+})();
+
+</script>
+
+</body>
+</html>
